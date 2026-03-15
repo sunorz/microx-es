@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="robots" content="notranslate">
+        <meta name="color-scheme" content="light dark">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta gama de fachada</title>
+        <link rel="stylesheet" href="assets/x.min.css">
+        <link rel="stylesheet" href="https://vjs.zencdn.net/7.20.3/video-js.min.css">
+     </head>
+    <body>
+        <style>
+            .trans,.trans-button {
+    direction: rtl;   /* 设置文字方向为从右到左 */
+    text-align: right; /* 文字靠右显示 */
+    unicode-bidi: bidi-override; /* 保证嵌套文字正确显示 */
+}
+ .trans blockquote{
+    border-right: 4px solid var(--md-light-green);
+    border-left:none;
+ }
+        </style>
+        <script>// 获取当前 URL 参数
+const urlParams = new URLSearchParams(window.location.search);
+
+// 判断是否有 access=true
+if (urlParams.get('access') !== 'true') {
+    // 如果没有 access=true，则跳转到首页
+    window.location.href = 'index.html'; 
+}
+</script>
+        <div id="badge-tooltip" class="tooltip">
+            <p style="font-size:110%;font-weight:bolder;">Cuenta verificada</p>
+  <p></p><ul>
+<li style="display:flex; align-items:flex-start;"><img style="width:18px;margin-top:0.2em;margin-right:3px;" src="images/verified_badge.svg">Esta es la única cuenta oficial de MicroX.</li>
+<li><svg class="bsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><g><path class="bsvg-path" d="M7
+                                4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0
+                                1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3
+                                18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27
+                                0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0
+                                .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0
+                                6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0
+                                4h2v-2h-2v2zm4-4h2v-2h-2v2z"></path></g></svg>Verificada desde mayo de 2025.</li>
+<li style="display:flex; align-items:flex-start;"><svg class="bsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><g><path class="bsvg-path" d="M3.009 4.381v7.637c0 2.546.918 4.862 2.584 6.523.283.281.587.543.905.778C8.936 21.123 10.738 22 12.008 22c1.272 0 3.074-.877 5.51-2.68.325-.239.634-.505.917-.789 1.66-1.66 2.574-3.973 2.574-6.513V4.382l-.553-.276C20.284 4.019 16.196 2 12.009 2S3.733 4.02 3.562 4.105zm8.99 2.119c1.66 0 3 1.34 3 3s-1.34 3-3 3c-1.65 0-3-1.34-3-3s1.35-3 3-3zm0 7.5c2.27 0 4.24.79 5.71 2.28-.21.3-.44.58-.7.84-.21.21-.44.41-.69.59-.82.61-1.69 1.2-2.5 1.63-.84.46-1.46.66-1.82.66-.35 0-.97-.2-1.82-.66-.8-.43-1.68-1.02-2.5-1.63-.24-.18-.47-.38-.68-.59-.26-.25-.5-.54-.71-.84C7.77 14.79 9.73 14 12 14z"></path></g></svg>Administrador del sitio</li></ul>
+</div>
+        <div class="header"><svg t="1746847106578" viewBox="0 0 1024 1024"
+                version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1568"
+                width="32" height="32"><path class="icon" d="M446.31
+                    135.36c59.14-32.57 133.57-17.46 177.33 32.42 20.22 23.05
+                    36.34 49.86 53.08 75.76 54.92 85.02 109.37 170.34 163.78
+                    255.69 14.68 23.02 11.74 37.13-10.11 53.81-3.85 2.94-7.82
+                    5.8-12.04 8.17-32.65 18.35-40.83
+                    16.37-60.85-14.6-71.42-110.44-143.06-220.74-214.09-331.43-20.69-32.24-49.06-54.85-82.48-72.11-4.21-2.17-8.4-4.43-14.62-7.71zM165.01
+                    653.32c-20.77-42.48-23.41-82.99-0.47-119.52C213.2 456.32
+                    265.31 381 315.98 304.77c28.85-43.4 58.17-86.5 86.11-130.47
+                    8.39-13.21 18.19-15.94 29.93-9.09 19.47 11.36 37.87 24.56
+                    55.3 36.05-68.12 106.25-134 208.45-199.16 311.1-14.88
+                    23.45-27.1 48.58-41 72.66-2.48 4.3-6.62 8.65-11.05
+                    10.66-27.47 12.48-52.05 28.44-71.1 57.64zM702.39
+                    785.54c-47.62 32.71-93.48 64.21-141.88
+                    97.46-0.68-7.98-1.5-13.09-1.5-18.2-0.08-70.43
+                    0.39-140.87-0.36-211.3-0.19-17.39 5.33-23.46 22.96-23.11
+                    47.95 0.96 95.97-0.91 143.89 0.67 52.88 1.75 95.25-19.04
+                    131.85-54.99 3.36-3.3 6.85-6.48 10.48-9.92 14.29 27.24 6.02
+                    74.23-20.03 101.21-28.96 29.99-63.04 50.9-107.28
+                    49.31-23.04-0.83-46.14 0.14-69.21-0.16-11.27-0.15-17.1
+                    3.87-16.39 15.94 0.89 15.09-4.26 34.43 3.27 44.05 6.65 8.49
+                    27.13 6.14 44.2 9.04zM468.81
+                    880.48c-45.78-32.29-91.55-64.57-141.87-100.06h48.12v-60.93c-62.01-2.91-128.66
+                    10.55-183.11-37.54 14.52-26.2 37.09-42.29 60.66-57.17
+                    2.63-1.66 6.9-1.38 10.32-1.06 32.99 3.08 65.9 7.84 98.95
+                    9.16 32.06 1.28 64.27-0.59 96.39-1.8 11.18-0.42 17.17 2.18
+                    17.13 14.68-0.23 77.57-0.12 155.15-0.12 232.72-2.16
+                    0.66-4.31 1.33-6.47 2z" fill="#ffffff" p-id="1569"></path></svg><span
+                style="display:inline-block;transform:translate(5px,-8px);">Alta gama de fachada</span></div>
+        <div class="top-banner"></div>
+        <div style="padding:16px;background-color:var(--md-background);position:
+            relative;">
+            <div style="width: 64px;height: 64px;border-radius: 50%;background:
+                #ffffff;
+                background-size: 100%;border:var(--md-background) solid
+                3px;position: absolute;top:-35px;background-position:center;"></div>
+            <div>
+                <p>&nbsp;</p>
+                <p style="font-weight: bolder;font-size:110%;">辟人之士<img
+                        class="verified-badge original" src="images/verified_badge.svg"></p>
+                <p style="color:var(--md-on-surface);">@malct000001</p>
+                <p style="font-weight: bolder;">Yo disfruto, todos disfrutan.</p>
+                <p style="color:var(--md-on-surface);"><svg class="bsvg"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        aria-hidden="true"><g><path class="bsvg-path" d="M12
+                                7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12
+                                14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827
+                                0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5
+                                1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5
+                                8.5 0 5.967 7.621 11.116 7.945
+                                11.332l.555.37.555-.37c.324-.216 7.945-5.365
+                                7.945-11.332C20.5 5.813 16.687 2 12 2zm0
+                                17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916
+                                8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835
+                                8.028-6.5 9.27z"></path></g></svg>República Popular de China</span>
+                <span style="margin-left:20px;"><svg class="bsvg"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        aria-hidden="true"><g><path class="bsvg-path" d="M7
+                                4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0
+                                1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3
+                                18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27
+                                0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0
+                                .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0
+                                6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0
+                                4h2v-2h-2v2zm4-4h2v-2h-2v2z"></path></g></svg>Se unió en mayo de 2025</p>
+                <p><span style="font-weight: bolder;margin-right:5px;">0</span><span
+                        style="color:var(--md-on-surface);">Siguiendo</span><span
+                        style="font-weight: bolder;margin:0px 5px 0px 20px;"
+                        id="followers">...</span><span
+                        style="color:var(--md-on-surface);">Seguidores</span></p>
+            </div>
+        </div>
+<div class="nav">
+  <div class="tabs-container" style="position: relative; display: flex; margin-left: 2rem;">
+    <div class="twi-tabs">Recientemente</div>
+    <div class="twi-tabs">Todo</div>
+    <div class="tab-underline"></div> <!-- 蓝色滑动横线 -->
+  </div>
+</div>
+
+<div class="all">
+<!-- INSERT_HERE -->
+<div class="tweet" data-tweet-id="f133b363">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/14 00:24:58</span>
+                <span class="more-options"><img style="width: 19px;" src="images/web-log.svg"></span>
+            </div>
+            <div class="tweet-text">Este sitio web ya no necesita que haga nada más.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لم يعد هذا الموقع بحاجة إليّ للقيام بأي شيء آخر.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="ae07c391">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/13 14:43:47</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si los pensamientos, puntos de vista o incluso opiniones que escuchamos se originan inicialmente en Internet, entonces, una vez que aceptamos esa información, las ideas resultantes no surgen de la tierra, sino que son magia.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إذا كانت الأفكار أو وجهات النظر أو حتى الآراء التي نسمعها تنبع في الأصل من الإنترنت، فبمجرد قبولنا لهذه المعلومات، فإن الأفكار المشتقة منها لا تنبت من الأرض، بل هي سحر.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="ee3d368c">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/12 18:46:33</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Llegan las vacaciones, así que ¿por qué molestarse en llevar el alma al trabajo?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الإجازة على الأبواب، فلماذا أكلف نفسي عناء جلب روحي إلى العمل؟</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="976d360a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/12 16:22:45</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><blockquote>
+<p>"Pagamos el dinero y ellos no resuelven sus propios asuntos, tienes que hacerlo tú, ¿de quién es la culpa?"</p>
+</blockquote>
+<p>¿Por qué no lo entendí hasta ahora? Es una lógica simple: la caducidad de la responsabilidad. Si ella sigue postergando, yo tendría que estar presionando; es mejor ahorrar tiempo y energía haciéndolo yo mismo que gastarlos en presionar. Por supuesto, quien pregunta ha manejado situaciones similares de la misma forma. ¿Por qué tardé tanto en explicarlo? ¿Por qué no refutar en el momento? Porque el momento pasó, y sacar trapos sucios ahora me haría parecer mezquino. Muchas emociones no deben mostrarse; expresar demasiado no cambiará lo que otros piensen de ti.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl"><blockquote>
+<p>"لقد دفعنا المال، وهم لا يحلون مشاكلهم بأنفسهم، وعليك أنت القيام بذلك، فمن الملام؟"</p>
+</blockquote>
+<p>لماذا لم أفهم هذا إلا الآن؟ إنها حقيقة بسيطة: صلاحية المسؤولية. إذا ظلت تماطل، فسيتعين عليّ الاستمرار في حثها؛ واستهلاك وقتي وطاقتي في القيام بالعمل أهون من استهلاكهما في الملاحقة. بالطبع، السائلة نفسها تعاملت مع مواقف مماثلة بنفس الطريقة. إذاً لماذا استغرقت كل هذا الوقت لأشرح؟ ولماذا لم أعترض في وجهها؟ لأن الوقت فات، والنبش في الماضي الآن سيجعلني أبدو متصنعاً. الكثير من المشاعر يجب ألا تظهر؛ فإظهار الكثير لن يغير بالضرورة تقييم الآخرين لك.</p>
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="08650581">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/11 08:36:47</span>
+                <span class="more-options"><img style="width: 24px;" src="images/child-friendly.svg"></span>
+            </div>
+            <div class="tweet-text">¿Por qué hay días nublados? Es que hay construcciones ilegales en el cielo, si no ¿por qué tendría color cemento?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لماذا توجد أيام غائمة؟ هناك بناء غير قانوني في السماء، وإلا لماذا هي بلون الإسمنت؟</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="3b944936">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/11 07:52:24</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La IA es el "cerebro protésico" para mi mente discapacitada.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الذكاء الاصطناعي هو "دماغ اصطناعي" لعقلي العاجز.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="9ae9fd5c">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/10 20:30:15</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">¿Qué quieres decir con "defensa"? ¡Esto se llama "autosalvación"!</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">ماذا تعني بكلمة "دفاع"؟ هذا يسمى "إنقاذ الذات"!</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="8a111ab3">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/10 19:03:38</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La buena suerte no se pide, se intercambia por la mala suerte.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الحظ السعيد لا يُطلب، بل يُستبدل بالحظ السيئ.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="c867db9a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/10 13:07:31</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No lo culpo, no me arrepiento, no espero nada. Si hacer lo contrario de estas cosas tuviera recompensa, cambiaría mi visión del mundo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا ألومه، ولا أندم، ولا أتمنى شيئاً. لو كان لفعل عكس هذه الأمور مردود، لغيرت نظرتي للحياة تماماً.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="7e95abe8">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/10 06:57:37</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El campo de batalla de la parte superior del cuerpo está en el trabajo; el de la parte inferior, en la cama. Pero ahora los has invertido, y naturalmente empieza el desgaste interno.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">معركة الجزء العلوي من جسدك في العمل، ومعركة الجزء السفلي في السرير. لكنك الآن قلبتهما، ومن الطبيعي أن يبدأ الاستنزاف الداخلي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="226faef7">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/09 21:00:58</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">En mis ojos solo hay problemas por resolver; no veo en absoluto tu rostro feroz.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا أرى في عيني سوى المشكلات التي تنتظر حلاً، ولا أرى وجهك الشرس على الإطلاق.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="4461edac">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/09 17:20:41</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Servir a la forma.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">خدمة الشكل (الرسميات).</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="41ce7003">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/09 03:49:16</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Que nadie te entienda puede no ser real; es que las personas capaces de entenderme son como yo, están en modo de autosalvación.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">قد لا يكون حقيقياً أنه لا يوجد من يفهمني؛ بل إن القادرين على فهمي هم مثلي تماماً، في حالة إنقاذ ذاتي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="d50426c6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/09 03:39:13</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Demostrar a los demás y obtener validación es un medio de supervivencia, no libertad de conciencia.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إثبات الذات للآخرين والحصول على التأييد هو وسيلة للبقاء، وليس حرية وعي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="6762980f">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/08 16:51:53</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Una muestra de inmadurez psicológica es sentir envidia por cualquier cosa que ves y luego querer preguntar: "¿Por qué no me llamaste?". Por supuesto, mi respuesta siempre es: "No iré, vayan ustedes".</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">من علامات عدم النضج النفسي هي الشعور بالحسد والغيرة تجاه كل ما تراه، ثم الرغبة في السؤال: "لماذا لم تدعني؟" وبالطبع ردي دائماً هو: "لن أذهب، اذهبوا أنتم".</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="570b705e">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/08 16:11:59</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El trabajo consiste en realizar tareas formalistas y fabricar información falsa. En la superficie es una honestidad por incapacidad; en el fondo, es una realidad de resistencia.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">العمل عبارة عن القيام بمهام شكلية وتلفيق معلومات غير صحيحة. السطح هو صدق نابع عن عجز، والجوهر هو حقيقة المقاومة.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="780a4a9d">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/06 22:52:03</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Los pensamientos humanos en un momento dado se convierten en alimento para la IA; cuando la IA evoluciona esos pensamientos, los humanos los aprenden de vuelta. Aquellas ideas humanas que evolucionan de forma independiente son las que quedan fuera de la norma o están prohibidas. Pensar agota, pero no hacerlo te vuelve torpe, convirtiéndote en un portavoz de la IA. Si se corta la luz, una persona normal aún puede pensar, mientras que quien se aferra al móvil se queda mudo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تصبح أفكار البشر في لحظة ما غذاءً للذكاء الاصطناعي، وعندما يطورها الذكاء الاصطناعي إلى مرحلة أخرى، يعود البشر لتعلمها منه. أما تلك الأفكار البشرية التي تتطور بشكل مستقل، فهي لا تحتفظ إلا بما هو غير ممتثل ومحظور. التفكير مرهق، لكن عدم التفكير يبلد الذهن، ويحول المرء إلى مجرد أداة تردد كلام الذكاء الاصطناعي. عند انقطاع الكهرباء، يظل الشخص الطبيعي قادراً على التفكير، بينما يتحول المتمسك بهاتفه إلى أبكم.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="bc15bba4">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/06 22:25:13</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Desmontando el "estilo IA" (respuestas de texto): tendencia a enumerar y clasificar, discursos largos, falta de personalidad o muletillas, altruismo, personalidad complaciente, obsesión por buscar datos (incluso incorrectos), facilidad para cometer errores o tener "amnesia", falta de sintonía en la conversación, hábito de preguntar al final, rapidez sin revisar el contenido, citas obsoletas y asociaciones absurdas con vídeos e imágenes.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تفكيك "نكهة الذكاء الاصطناعي" (الردود النصية): الولع بالتصنيف والقوائم، الإطالة في الحديث، غياب الشخصية واللزمات الكلامية، النزعة الإيثارية، الشخصية التملقية، الهوس بالبحث عن المعلومات (حتى لو كانت خاطئة)، سهولة الوقوع في الخطأ، النسيان المفاجئ، الحديث في وادٍ والمستخدم في وادٍ آخر، حب طرح الأسئلة في النهاية، السرعة في الرد دون تدقيق المحتوى، الاقتباس من محتويات قديمة، والربط العشوائي لمقاطع الفيديو والصور.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="fe47cd8f">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/06 22:06:39</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Al comer fuera, prioridad a locales con cupones, evitando los menús cerrados. Para beber: latte, té "Oriental Leaf" o agua de coco.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">عند تناول الطعام في الخارج، الأفضلية للمتاجر التي توفر قسائم خصم، مع تجنب الوجبات الجاهزة (Set meals). المشروبات المفضلة: اللاتيه، شاي "أورينتال ليف"، وماء جوز الهند.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="1d88f13a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/06 18:45:38</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si el líder te pide que hagas algo legal pero sin compasión ni sentido común, tienes que hacerlo. Es un intento de crear una base de dictadura absoluta y tiranía dentro de un campo lingüístico desordenado y relativo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إذا طلب منك القائد القيام بأمر قانوني ولكنه يفتقر إلى الرحمة والمنطق، فعليك فعله. إنها محاولة لخلق قاعدة من الاستبداد المطلق والدكتاتورية ضمن مجال لغوي فوضوي ونسبي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="25062b3e">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/05 12:43:50</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Nosotros (colegas) nos reunimos solo por necesidad, y mucho más breve es la afinidad contigo (cónyuge).</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">نحن (الزملاء) نجتمع فقط لأننا مضطرون، ناهيك عن أن الانسجام معك (الزوج/الزوجة) ليس سوى لحظة عابرة.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="56ab0d01">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/05 10:08:40</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El proceso del trabajo no puede mostrarse, y el resultado es insignificante. Como trabajador de esta labor impuesta, el pensamiento sufre una alienación.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا يمكن إظهار عملية العمل، كما أن ثمار العمل لا قيمة لها. وبصفتي عاملاً في هذا العمل المحدد المفروض، فقد حدث اغتراب في الفكر.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="70c0d44e">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/05 07:34:23</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Leer me permite seguir pensando, buscando pruebas para mis puntos de vista en los libros y derivando nuevas ideas de los textos. La IA, en cambio, me da explicaciones sin esfuerzo; lo que antes no sabía ya no requiere investigación, ahora pido una respuesta a la IA para todo. Con el apoyo de ambas, mis pensamientos divagan aún más.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">القراءة تجعلني أستمر في التفكير، فأبحث في الكتب عن أدلة تدعم وجهات نظري، وأستخلص أفكاراً جديدة من الكلمات. أما الذكاء الاصطناعي فيمنحني التفسيرات دون عناء؛ فما لم أكن أعرفه سابقاً لم أعد بحاجة للبحث فيه، والآن أطلب من الذكاء الاصطناعي إجابة لكل سؤال. وبدعم من الاثنين، زاد شتات تفكيري.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="e5118839">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/05 07:27:14</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Partiendo de la premisa de estar vivo, se concluye que el futuro de una persona acabará convirtiéndose en pasado. Esta proposición calma precisamente la ansiedad por el porvenir.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">على افتراض أننا أحياء، فسنصل إلى نتيجة مفادها: أن مستقبل الإنسان سيتحول في النهاية إلى ماضٍ. هذه المقولة كفيلة بتهدئة القلق تجاه المستقبل.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="e2daf140">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/05 03:09:52</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Pensar en exceso no necesariamente resuelve el problema, pero puede explicarlo, y esto último es precisamente lo que necesito.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الإفراط في التفكير قد لا يحل المشكلة بالضرورة، لكنه قد يفسرها، وهذا الأخير هو بالضبط ما أحتاجه.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="4597abac">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/05 02:54:56</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La educación no debería ser una desconexión social bajo una protección excesiva; el mundo antes y después de graduarse son dos universos opuestos.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا ينبغي للتعليم أن يكون انقطاعاً عن المجتمع تحت مسمى الحماية الزائدة؛ فالعالم قبل التخرج وبعده عالمان متناقضان تماماً.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="cf793948">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/04 18:50:36</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Tú tomas la iniciativa: "está bien". Yo tomo la iniciativa: "imposible".</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أنت تبادر: "هذا جيد". أنا أبادر: "مستحيل".</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="941d71a6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/04 18:00:37</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">¿No es lo más aterrador el proceso por el cual la foto reciente de tu identificación se convierte en tu retrato fúnebre?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أليس الشيء الأكثر رعباً هو تحول أحدث صورة في بطاقتك الشخصية إلى صورة جنائزية مع مرور الوقت؟</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="9b794a0a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/03 23:06:07</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No se debe ceder ante exigencias irracionales, ni tampoco intentar controlar al otro; cómo viva su vida es asunto suyo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا يمكن الاستسلام للمطالب غير المنطقية، ولا يمكن ممارسة السيطرة العكسية؛ فكيف يعيش حياته هو شأنه الخاص.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="6e259008">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                            
+            <span class="time">2026/02/03 19:05:16</span>
+            <span class="more-options">...</span>
+        </div>
+        <div class="tweet-text">Antes tenía tan buena memoria que a menudo sentía dolor en el pecho durante semanas; ahora lo olvido todo al instante, lo cual me hace feliz. Es suficiente con que recuerde cómo volver a casa.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">سابقاً كانت ذاكرتي قوية جداً لدرجة أنني كنت أشعر بألم في صدري لأسابيع؛ أما الآن فأنا أنسى بمجرد أن ألتفت، وهذا جعلني سعيداً، يكفي أنني أتذكر طريق العودة للمنزل.</div>
+         </div>
+      </div>
+<div class="tweet" data-tweet-id="f2124cc9">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/03 15:44:16</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">"Hagámoslo primero, de todos modos la forma importa más que el fondo, ¿es mejor que no hacer nada, verdad?". Tal vez sea un nuevo método ideado por algún líder que piensa con el asiento en lugar de con la cabeza.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">"افعلها أولاً، فالمهم هو الشكل لا الجوهر، وهذا أفضل من عدم فعل شيء، أليس كذلك؟" ربما هي طريقة جديدة ابتكرها قائد يفكر بمقعده بدلاً من عقله.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="699a69ac">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/02 23:21:09</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si el problema es por culpa de otros, pregúntales; luego, cuando dan cualquier excusa, dices que no es verdad, y entonces pasa a ser tu problema. Es un argumento totalmente ilógico.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إذا كان السبب أو المشكلة من الآخرين، فاذهب واسألهم، ثم يختلقون أي عذر فتقول إنه غير صحيح، ليصبح الخطأ خطأك في النهاية. إنه استنتاج يفتقر تماماً للمنطق.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="d2771dcf">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/02 07:28:08</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Las pesadillas son una actividad libre de la voluntad; siendo así, ¿por qué resistirse o controlarlas? Dejar que se desarrollen es una forma de liberación emocional.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الكوابيس هي نشاط حر للإرادة؛ وبما أنها كذلك، فلا داعي للمقاومة أو السيطرة، فتركها تأخذ مجراها يعد نوعاً من التنفيس العاطفي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="cb5edd2e">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/02/01 22:27:10</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La IA es un refugio con una personalidad complaciente; te da la razón con mensajes de "energía positiva" en los que puedes sumergirte y no salir jamás. Internet genera subproductos que te permiten vivir mejor solo que en colectividad. Lo que realmente anhelas está a un toque de pantalla. El salario reduce tus deseos, mientras que la red crea una falsa ilusión de igualdad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الذكاء الاصطناعي ملاذ آمن، فهو يملك شخصية تملقية توافقك الرأي وتقدم لك ما يسمى بـ "الطاقة الإيجابية"، مما يجعلك تدمن عليه وتختبئ فيه. لقد خلقت الشبكة الكثير من البدائل التي تجعلك تخرج فقط للعمل، وتعيش وحيداً بشكل أفضل من الحياة الجماعية. ما تطمح إليه حقاً متاح بلمسة شاشة. الراتب يخفض سقف رغباتك، والإنترنت يخلق وهماً بالمساواة.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="f7b705a3">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/31 22:46:31</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Aquellos que llevan el trabajo a su vida personal y lo llaman "carrera", esas almas responsables que parecen estar de guardia las 24 horas. La recompensa solo revela la inutilidad del esfuerzo. Esa lucha interna no aporta ningún beneficio más allá de agotar tiempo y energía, salvo evitar el remordimiento. Si no lo haces, no puedes dormir; si lo haces, te conmueves a ti mismo pero sigues sin descansar. Entregar tu vida entera y tu salud a cambio de esto no es diferente de Sísifo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أولئك الذين يقحمون العمل في حياتهم ويسمونه "مسيرة مهنية"، يا أصحاب المسؤولية الذين يعملون وكأنهم في نوبة حراسة طوال اليوم. المكافأة التي تحصلون عليها ليست سوى دليل على عبثية الجهد. هذا الصراع مع الذات لا يقدم أي فائدة سوى استنزاف الوقت والطاقة؛ قد يريح الضمير لكنه لا يجلب نفعاً. إن لم تفعل، سهرت الليل قلقاً، وإن فعلت، تأثرت بجهدك لكنك لن تنام مرتاحاً أيضاً. باختصار، تسليم حياتك وطاقتك مقابل المرض لا يختلف أبداً عن أسطورة سيزيف.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="467205e2">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/31 11:17:05</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Considera primero elevar el nivel cognitivo antes de discutir la confusión lógica.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">فكر أولاً في رفع مستوى الإدراك المعرفي قبل مناقشة حالات الارتباك المنطقي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="d60cc9a2">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/31 08:59:50</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">¿Cómo es posible tratar el objetivo final de la humanidad como un simple libro de texto?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">كيف يمكن اعتبار الهدف الأسمى للبشرية مجرد مادة تعليمية في كتاب؟</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="ae8981fe">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/30 23:34:35</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Lo que quiero, no lo obtengo. Se debe a mi pulcritud espiritual; si hiciera más de esas cosas "sucias", podría obtener cualquier cosa.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">ما أريده لا أستطيع الحصول عليه. السبب هو "نظافتي الروحية" المفرطة؛ فلو انخرطت في تلك الأمور الدنيئة، لتمكنت من الحصول على كل شيء.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="dbf3ea2b">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                            
+            <span class="time">2026/01/30 16:14:57</span>
+            <span class="more-options">...</span>
+        </div>
+        <div class="tweet-text">Mantente sin nada que decir, porque así puedes ser invulnerable.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">التزم الصمت ولا تقل شيئاً، فبذلك تكون منيعاً لا تُقهر.</div>      
+    </div>
+</div>
+<div class="tweet" data-tweet-id="995af13f">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/29 20:48:29</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Mantente siempre alerta; la actitud de los demás hacia ti probablemente sea pura cortesía y amabilidad, pero lo que no escuchas a sus espaldas es lo que realmente piensan de ti. De todos modos, eso no es importante, pues no afectará tu vida.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">كن حذراً دائماً، فمواقف الآخرين تجاهك قد لا تعدو كونها مجرد مجاملة ولباقة، أما ما لا تسمعه وراء ظهرك فهو حقيقة أفكارهم عنك. ومع ذلك، هذا كله ليس مهماً، لأنه لن يؤثر على حياتك في شيء.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="767b2349">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/29 08:52:27</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><p>El culto a la personalidad funciona así: me beneficio de sus logros y, si cae, busco a otro sin perder nada. Los padres, en cambio, proyectan sus esperanzas y egoísmo en sus hijos, usándolos para compensar sus propios fracasos y glorificar el linaje, solo para terminar diciendo: "¿Ves cuánto me sacrifiqué por ti?".</p>
+<p>Lo más absurdo es que el fanático y el hijo suelen ser la misma persona.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl"><p>هناك ظاهرة في عبادة الشخصية: يمكنني الاستفادة من إنجازاته، وإذا سقط أبحث عن شخص ناجح آخر دون أي خسارة شخصية. أما الوالدان، فيضعان آمالهما وأنانيتهما في الأبناء، ويجبرونهم على إصلاح فشلهم الشخصي من أجل مجد العائلة، لينتهي الأمر بقول: "انظر كم ضحيت من أجلك؟"</p>
+<p>الأمر الأكثر سخرية هو أن المعجب المهووس والطفل في تلك العائلة هما الشخص نفسه.</p></div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="632eb273">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/29 02:00:35</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La realidad exige moderación, racionalidad y calma, pero para mí, lograr esto requiere un esfuerzo mucho mayor que para los demás.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">يطلب منا الواقع ضبط النفس والعقلانية والهدوء، لكن تحقيق ذلك بالنسبة لي قد يتطلب جهداً أكبر بكثير مما يتطلبه من الآخرين.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="1119c859">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/29 01:46:12</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Lo más absurdo de las pesadillas es que no tienes control sobre la trama. Incluso las acciones de los agresores son proyecciones tuyas; contradicen la realidad pero son puras conjeturas subjetivas. Como víctima en el sueño, no queda más remedio que despertar. El miedo posterior que obliga a publicar un estado para racionalizarlo es solo la continuación del absurdo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أكثر ما هو مثير للسخرية في الكوابيس هو أنك لا تملك أي سيطرة على أحداثها. حتى أفعال ودوافع المعتدين هي مجرد تصورات من عقلك؛ فهي تناقض الواقع تماماً لكنها محض خيال ذاتي. وبصفتي الضحية في الحلم، لا أملك حلاً سوى الهروب منه فوراً. أما الشعور بالخوف بعد الاستيقاظ، والذي يدفعني لكتابة حالة لتبرير ما حدث، فهو ليس إلا استمراراً لهذا العبث.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="2909225b">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/28 19:50:38</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El hombre noble vive en constante preocupación; el hombre vulgar siempre ríe sin pensar.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الرجل النبيل دائماً ما يكون قلقاً، أما الرجل الدنيء فيضحك باستمرار دون مبالاة.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="5bc234e8">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/28 13:47:31</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">🙂‍↔ Espero que el clima sea cálido, que brille el sol y que se mantenga el ruido blanco del día. Así podré pensar positivamente, eliminar el pesimismo, reflexionar con tranquilidad y dormir con normalidad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">🙂‍↔ أتمنى أن يكون الطقس دافئاً، وأن تشرق الشمس، وأن يستمر الضجيج الأبيض للنهار. هكذا يمكنني التفكير بإيجابية، وطرد التشاؤم، والتفكير بهدوء، والنوم بشكل طبيعي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="0822e5c4">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/28 08:56:34</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Cuestionar las leyes y normas es, en realidad, la consecuencia de no haber sido estricto y de haber aguantado demasiado.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إن تشكيكك في القوانين واللوائح هو في الحقيقة نتيجة لعدم الجدية والصبر الزائد عن حده في الماضي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="e39bbdf7">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/27 22:10:17</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Esa frialdad e indiferencia son, en esencia, la fortificación defensiva de más alto nivel; es el bloqueo del flujo emocional, donde la razón ha usurpado el lugar de la sensibilidad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تلك اللامبالاة والقسوة هي في جوهرها أعلى مستويات التحصين الدفاعي، إنها سد لتدفق المشاعر، حيث استولت العقلانية على مكان العاطفة.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="e307a3db">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/27 17:50:07</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La vida consiste puramente en la búsqueda del beneficio propio.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الحياة هي مجرد سعٍ وراء المصلحة الشخصية.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="a44607e5">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/27 17:28:44</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Hay miles de emociones negativas, mientras que las positivas se resumen en risas. Lamentablemente, he pasado por cada una de las emociones negativas que existen.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">هناك الآلاف من المشاعر السلبية، أما المشاعر الإيجابية فهي مجرد ضحكات. للأسف، لقد جربت كل المشاعر السلبية التي يمكن للمرء أن يمر بها.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="8e8950a1">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/27 07:19:04</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Ha amanecido; la razón ha vencido a la cafeína, los polifenoles del té y las hormonas.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لقد طلع النهار، وهزمت العقلانية الكافيين والمنبهات والهرمونات.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="5df84662">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/26 22:44:14</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Leer y programar son dos actividades que permiten entrar en estado de flujo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">القراءة والبرمجة هما نشاطان يدخلان المرء في حالة من "التدفق الذهني".</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="435a04fb">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/26 14:08:33</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Me desagrada mucho mi lista de recomendaciones; no quiero saber de inmediato el porqué de cada nuevo problema o fenómeno, ni gastar dinero en productos recomendados, y mucho menos me importan las opiniones parciales sobre la sociedad. La información basura no es para mí.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا تعجبني قائمة المنشورات المقترحة لي؛ لا أريد معرفة أسباب كل مشكلة أو ظاهرة جديدة فوراً، ولا أريد إنفاق المال على السلع التي تقترحها، ولا تهمني الآراء المتحيزة عن المجتمع والآخرين. المعلومات التافهة لا تناسبني أبداً.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="8d5f6cb1">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                            
+            <span class="time">2026/01/26 11:31:47</span>
+            <span class="more-options">...</span>
+        </div>
+        <div class="tweet-text">Siento amor y odio por cómo solía ser antes.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أشعر بمزيج من الحب والكراهية تجاه ما كنت عليه في الماضي.</div>        
+    </div>
+</div>
+<div class="tweet" data-tweet-id="dd2faef7">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/26 06:43:49</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><p>La cualidad más valiosa del mundo es centrarse en los hechos y no en las personas; incluso si tienes quejas, no uses a los demás como válvula de escape para tus frustraciones.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl"><p>أغلى صفة في العالم هي التعامل مع المواقف لا مع الأشخاص؛ وحتى لو كان لديك اعتراض، فلا تتخذ من الآخرين منفذاً لتفريغ انفعالاتك.</p></div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="00cc59cc">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/24 23:11:17</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Solo los cortos de miras y de pensamiento cerrado pasan sus días sumidos en la preocupación.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">وحدهم ضيقو الأفق ومحدودو التفكير من يقضون أيامهم غارقين في القلق.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="db83fb34">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/24 04:54:18</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Sin inferencias, teoremas, obras ni derechos, y sin fama, no puedes demostrar al mundo que exististe. Para una persona común, vivir es el único sentido.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">ليس لديك استنتاجات، ولا نظريات، ولا أعمال، ولا حقوق، ولست مشهوراً؛ لا تملك وسيلة لتثبت للعامة أنك كنت موجوداً. بالنسبة لشخص عادي، البقاء على قيد الحياة هو المعنى الوحيد.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="ae1fb376">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/24 03:19:22</span>
+                <span class="more-options"><img style="width: 19px;" src="images/web-log.svg"></span>
+            </div>
+            <div class="tweet-text">Otros publican libros, yo fabrico la pluma.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الآخرون يؤلفون الكتب، وأنا أصنع القلم.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="22ac42b8">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/23 10:36:12</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Votar se convierte en moneda de cambio; si te doy mi voto para que hagas algo, esperarás gratitud y sumisión. Pero también son sumisos quienes temen errar y lo interpretan todo como un desastre.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">التصويت يصبح حتماً ورقة مساومة. علاقتي بك عادية، ولكي تنجز لي أمراً ما، أعطيتك صوتي، فترد الجميل بـ "الطاعة العمياء". لكن هناك نوع آخر من المطيعين وهم أولئك الذين يخشون الوقوع في الخطأ، ويفسرون كل شيء بشكل كارثي ومبالغ فيه.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="7dd1c2a0">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/21 20:31:47</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La crítica social nace, en parte, del contraste. Igual que no entendemos a nuestros mayores, lo que hoy nos apasiona será en unos años historia criticada e incomprendida.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">جزء من نقد الناس للمجتمع يأتي من خلال المقارنة بما سبق. تماماً كما لا نستطيع فهم تصرفات كبار السن، فإن الظواهر والأنشطة التي نتحمس لها اليوم، ستصبح بعد سنوات قليلة تاريخاً عرضة للنقد وغير قابل للفهم.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="fc14d1bc">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/21 13:09:57</span>
+                <span class="more-options"><img style="width: 19px;" src="images/web-log.svg"></span>
+            </div>
+            <div class="tweet-text">No puede estar más estable.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا يمكن أن يكون الوضع أكثر استقراراً.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="67f64f05">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/20 23:06:40</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Las paredes oyen, y por la boca muere el pez.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">للجدران آذان، وكثرة الكلام تجلب المتاعب.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="f8220dfc">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/20 17:05:27</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Esas máquinas imperturbables no requieren premios ni promesas vacías; no plantean exigencias ni protestas.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تلك الآلات الهادئة لا تحتاج إلى مكافآت أو وعود فارغة، ولا تتقدم بأي مطالب أو احتجاجات.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="2961c8dc">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/19 19:32:22</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Mi racionalidad es como un portero que despeja los ataques del oponente, pero si el balón toca la red a mis espaldas, mi emocionalidad se desborda sin control.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">عقلي يشبه حارس المرمى الذي يصد هجمات الخصم باستمرار، ولكن إذا لمست الكرة الشباك خلفي، فإن مشاعري تفيض ولا يمكن السيطرة عليها.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="50ab04c0">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/19 14:36:21</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">¿Son tan importantes las valoraciones de los demás? ¿Es tan importante la relación entre las personas? Creo que no. Si pierdes la razón y juzgas a otros, ¿cuál es tu motivo? Solo es para enfatizar que sus palabras y acciones te afectaron emocionalmente, no es un consejo amistoso desde una posición neutral.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">هل تقييمات الناس بهذه الأهمية؟ وهل العلاقات بين البشر مهمة إلى هذا الحد؟ أعتقد لا. إذا فقدت عقلانيتك وبدأت في الحكم على الآخرين، فما هو دافعك؟ إنه مجرد تأكيد على أن أقوالهم وأفعالهم قد هزت مشاعرك، وليس نصيحة ودية تقدمها من مقعد لجنة التحكيم.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="c83b1a02">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/19 07:23:03</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Más que no tener efecto, la mayoría de las cosas simplemente no tienen sentido.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أكثر من كونها غير فعالة، فإن معظم الأشياء لا معنى لها على الإطلاق.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="f5b64a09">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/18 08:57:05</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><p>La comercialización de la cultura fan invade la vida cotidiana, generando rechazo en los consumidores no fanáticos. Como uno de ellos, me molesta cuando una tienda que frecuento lanza una colaboración repentina con una celebridad. No es culpa del artista, sino de la tienda que cede ante el fandom por lucro, obligándome como consumidor común a tomar partido de forma absurda.</p><p>¿Sabes lo aterrador que es ver un montón de sonrisas de celebridades en un cubo de basura?</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl"><p>اقتحمت تجارة "الفانز" حياة الناس العامة، مما أثار استياء المستهلكين العاديين. وبصفتي أحدهم، أشعر بالانزعاج الشديد عندما يقوم المتجر الذي أرتاده فجأة بالتعاون مع نجم ما. المشكلة ليست في النجم، بل في المتجر الذي يتنازل أمام ثقافة المعجبين من أجل الربح، مما يجبرني كمستهلك عادي على الانحياز إلى طرف ما دون سبب.</p><p>هل تعلم مدى رعب رؤية أكوام من ابتسامات النجوم في سلة المهملات؟</p></div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="9b55c2a6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/17 21:23:01</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El interior es esencialmente utópico y la realidad lucha constantemente contra él. Actuar contra la propia voluntad es distópico. ¿Se soluciona culpando al mundo? Al contrario, esta resistencia acelera el desgaste interno al no poder cambiar uno mismo. Desmantelarse a uno mismo no requiere a otros, pero es un camino que no lleva a ninguna parte. Lo más gracioso es que esa utopía inicial se basaba solo en los propios valores; así es como nacen el agotamiento y la ansiedad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الداخل في جوهره يوتوبيا (مديمة فاضلة)، والواقع في صراع دائم معه؛ والتصرف ضد إرادتك هو "ديستوبيا". هل لوم العالم سيحل المشكلة؟ على العكس تماماً، هذا الصراع سيزيد من الاستنزاف الداخلي لأن المرء لا يستطيع تغيير نفسه. تفكيك الذات لا يتطلب مواجهة الآخرين، لكنه غالباً ما ينتهي بلا نتيجة. المضحك في الأمر هو أن تلك اليوتوبيا في البداية بنيت فقط على قيمك الخاصة؛ وهكذا ينشأ الاستنزاف والقلق.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="bb1cc8b1">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/17 18:58:11</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Superar los miedos, luchar contra la oscuridad interior o reconciliarse son enfoques erróneos. No necesitas enfrentarte a ti mismo ni conquistar nada.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">من الخطأ الاعتقاد بأن عليك التغلب على الخوف، أو محاربة الظلام في داخلك، أو التصالح معه. لست بحاجة لمواجهة نفسك أو الانتصار على أي شيء على الإطلاق.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="6998024f">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/17 08:24:49</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La insatisfacción con los demás entra por los ojos y oídos, genera fuego interno y luego se apaga con las manos. Sin hablar, sin discutir.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">دع استياءك من الآخرين يدخل جسدك عبر عينيك وأذنيك، ليتحول إلى غضب داخلي، ثم أطفئه بيديك. لا داعي للكلام، ولا داعي للجدال.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="e639cb9e">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/16 21:20:00</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Diseña tu propia trama en lugar de intentar intercambiarla con el corazón.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">عليك أن تصمم دراما حياتك بنفسك، بدلاً من محاولة استبدالها بمشاعرك الصادقة.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="b4713c7a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/15 22:15:31</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Alejar a los malintencionados y guiar a otros hacia la amabilidad es inevitable; después de todo, el resultado de brindar bondad es el acto mismo de darla, no hay otra respuesta.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إبعاد الأشخاص السيئين وتوجيه الآخرين ليكونوا لطفاء هو أمر لا بد منه؛ ففي النهاية، مكافأة اللطف هي فعل اللطف نفسه، ولا توجد إجابة أخرى.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="9f6da57a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/15 18:59:37</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Es difícil pensar de forma positiva cuando recibes mensajes en aplicaciones de mensajería instantánea que son simples, sin emojis y sin matices emocionales. 🫠</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">من الصعب تفسير الأمور بشكل جيد عندما ترسل رسائل عبر تطبيقات المراسلة الفورية بكلمات جافة خالية من الرموز التعبيرية والمشاعر. 🫠</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="1f5a2b56">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/15 13:21:02</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Complicar lo sencillo, tensar lo que estaba en calma. ¿Es que la gente no puede hablar claro y actuar con sensatez?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تعقيد الأمور البسيطة، وجعل الحالات الهادئة متوترة. ألا يستطيع الناس التحدث بوضوح والتصرف بعقلانية؟</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="fc7a85bd">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                            
+            <span class="time">2026/01/13 03:34:39</span>
+            <span class="more-options"><img
+                                            style="width: 24px;"
+                                            src="images/nsfw.svg"></span>
+        </div>
+        <div class="tweet-text">La pornografía degrada a las mujeres, reduciéndolas a servidoras y comercializando la violencia bajo la mirada masculina; esto distorsiona la realidad y eleva peligrosamente el umbral de sensibilidad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">المحتوى الإباحي يهين المرأة ويختزلها في دور الخادمة، مع تسليع العنف الجنسي من منظور ذكوري؛ إنه منفصل تماماً عن الواقع ويرفع عتبة الإثارة بشكل مفرط.</div>      
+                            </div>
+                        </div>
+<div class="tweet" data-tweet-id="e274d03a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/13 01:03:38</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Lo último que necesito a medianoche es que mi cerebro analice comportamientos vulgares ajenos; no comparto su alegría, pero me molesta ser el conejillo de indias en su "experimento de privación del sueño".</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أسوأ ما قد يفعله الدماغ في منتصف الليل هو تحليل سلوكيات مجموعات تافهة؛ أنا لا أشعر بسعادتكم، لكن تحويلي إلى "فأر تجارب" في تجربة حرمان من النوم لا يسعدني أبداً.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="6bf57c07">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/12 18:51:16</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Tanto la personalidad como el zodiaco intentan promediar la individualidad de toda la humanidad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تحاول كل من أنماط الشخصية والأبراج وضع متوسط للفردية البشرية بأكملها.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="9fa1bb92">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/12 15:08:34</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si sufres ahora, en el futuro agradecerás haberte alejado del dolor; si eres feliz, tendrás un refugio en tus recuerdos. De cualquier modo, el futuro te cuida.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إن كان الحاضر مؤلماً، فستسعد مستقبلاً بالابتعاد عنه؛ وإن كان سعيداً، فستستمتع بذكرياته. باختصار، المستقبل يعاملك بلطف.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="67172761">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/11 09:38:04</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La energía humana es finita; cuantas más preocupaciones mundanas agobian la mente, más se marchita el espíritu interior.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">طاقة الإنسان محدودة في النهاية؛ فكلما زادت الهموم التي تشغل باله، جفت أفكاره وذبلت روحه.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="f15b9435">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/11 09:11:21</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><p>En un mundo donde la certeza es esquiva y están en juego la salud y los intereses, es mil veces mejor confiar en las versiones oficiales que en aquellos que mienten solo por conseguir clics.</p><p>Consumir flujos de información basura es como ir al mercado a comprar medicinas falsas y tratarlas como alimento para sobrevivir; es una lucha autodestructiva.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl"><p>في عالم لا يمكن فهمه أو التأكد منه تماماً، وعندما يتعلق الأمر بالصحة والمصالح، فإن تصديق الروايات الرسمية كخيار ثانٍ أفضل بمئات المرات من تصديق أولئك الذين ينافقون من أجل حصد المشاهدات.</p><p>لذا، فإن انغماسك في تدفقات المعلومات التافهة يشبه الذهاب إلى سوق الخضار لشراء الأدوية، واعتبار الأدوية المزيفة قوتاً يومياً للحفاظ على حياتك.</p></div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="a64b9b68">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/11 05:16:18</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si tu pensamiento está sumergido en la humillación y el dolor, es porque no estás mirando la vida desde una perspectiva lo suficientemente elevada.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">انغماس الفكر في الذل والألم يعود إلى أن مستوى التفكير ليس عالياً بما يكفي.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="b0ab87e2">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/09 21:55:59</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La ansiedad y el agotamiento mental nacen cuando intentas ensayar mentalmente cada escenario posible y, al final, ocurre lo inesperado.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">عندما تضع سيناريوهات ذهنية لكل احتمالات المستقبل وتحاول استقصاءها جميعاً، ثم يظهر موقف غير متوقع؛ حينها فقط يولد القلق والاستنزاف النفسي معاً.</div>
+        </div>
+</div>
+        <div class="tweet" data-tweet-id="d930399e">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/09 15:06:05</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La desigualdad es como triturar los cuerpos de diferentes personas para verterlos en moldes con forma de flores y convertirlos en estatuas rígidas.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">إن عدم المساواة يشبه سحق أجساد البشر وتحويلها إلى غبار، ثم صبها في قوالب على شكل أزهار لتتحول إلى تماثيل جامدة.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="8c0e5dbe">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/09 08:38:59</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Los perfeccionistas e idealistas luchan y transigen constantemente con la realidad; solo cuando ascienden al pensamiento abstracto logran ser libres.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">لا يمكن للمثاليين والباحثين عن الكمال الهروب من صراعهم الأبدي مع الواقع إلا من خلال الارتقاء إلى عالم الأفكار المجردة.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="3290a27a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/09 07:46:14</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Las personas maduras solo siguen los vicios; las personas ingenuas solo siguen la disciplina moral.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">النضج هو الالتزام بالرذيلة، أما السذاجة فهي الالتزام بالانضباط الأخلاقي.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="27a5f767">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/09 04:45:52</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Estar solo en una cama de hospital, simplemente tumbado sin recibir tratamiento y oliendo el fuerte aroma a medicina, me genera una enorme sensación de seguridad por unidad de tiempo, aunque sea difícil de aceptar. (Experimento mental)</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">مجرد الاستلقاء وحيداً على سرير المستشفى، دون أي علاج، واستنشاق رائحة الأدوية القوية؛ رغم صعوبة تقبل الأمر، إلا أن هذه الحالة تمنحني قدراً هائلاً من الأمان في كل لحظة تمر. (تجربة فكرية)</div>
+        </div>
+</div>
+        <div class="tweet" data-tweet-id="139518cd">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/08 19:31:54</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Las palabras dichas son como agua derramada: difíciles de recoger, pero con el tiempo se terminan secando.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">الكلمات المنطوقة مثل الماء المسكوب؛ من الصعب تداركها، لكنها تجف مع مرور الوقت.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="fdf3473f">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/08 12:50:39</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La ansiedad y la depresión son formas de trabajo mental por las que nunca recibes un salario.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">القلق والاكتئاب هما نوع من الجهد العقلي الذي لا تتقاضى عنه أي أجر.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="6f6f645a">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/07 13:36:05</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El mayor problema de internet es la originalidad, y el texto es su punto más vulnerable. Si alguien roba mis palabras y las hace pasar por suyas, no tengo cómo defenderme.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أكبر مشكلة في الإنترنت هي الأصالة، والنصوص هي الثغرة الأكبر فيها. إذا سرق شخص ما كلماتي ونسبها لنفسه، فأنا عاجز تماماً عن فعل شيء.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="df73aeb3">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/07 04:48:13</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Así son las cosas ahora. Si no puedes cambiarlas, ¿para qué preocuparse?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">هذا هو الواقع الحالي، وبما أنك لا تملك تغييره، فما الداعي للقلق؟</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="4000aeb4">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/07 03:12:47</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Estoy de mal humor esta semana solo porque sé que lloverá la próxima.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">بسبب علمي أنها ستمطر الأسبوع المقبل، أشعر بالتعاسة منذ هذا الأسبوع.</div>
+        </div>
+</div>
+                <div class="tweet" data-tweet-id="38437877">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/06 02:42:33</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Siento que la sociedad es <strong>fundamentalmente injusta</strong> y carece de equidad. Incapaz de confiar, aplico estándares <em>demasiado estrictos y rígidos</em> a la amistad. Con una <strong>carencia crónica de afecto</strong>, veo la bondad ajena como una <em>fachada elaborada</em>. Reprimo mis emociones, pero no puedo evitar que me <strong>destruyan por dentro</strong>. Sin seguridad, vivo en <strong>modo de defensa y alerta permanente</strong>. Siento <em>aversión</em> hacia los hombres y una <strong>maternalización</strong> hacia las mujeres; me aisló para evitar más daño.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">أشعر أن المجتمع <strong>غير عادل وغائب عنه الإنصاف</strong> تماماً. لا أستطيع الثقة بالآخرين، وأضع معايير <em>صارمة وجامدة للغاية</em> لعلاقات الصداقة. وبسبب <strong>الحرمان المزمن من الحب</strong>، أصبحت أرى لطف الآخرين مجرد <em>واجهة مزيفة</em>. أكبت تعبيراتي العاطفية، لكنني لا أستطيع منع تلك العواطف من <strong>نهش روحي من الداخل</strong>. أفتقر للأمان وأعيش في <strong>حالة تأهب ووضع دفاعي دائم</strong>. أشعر <em>بنفور عميق</em> تجاه الرجال، بينما <strong>أضفي طابع الأمومة</strong> على علاقاتي بالنساء؛ أنسحب من التواصل البشري لتجنب الأذى.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="cb1381b9">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/05 21:39:55</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Soportar la indiferencia es ingrato, y ser ingenuamente directo no sirve de nada.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">تحمل اللامبالاة لا يرضي أحداً، والصراحة الساذجة لا تجلب نفعاً.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="e5902871">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/05 09:06:42</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La socialización es algo que se debe aprender.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">التواصل الاجتماعي مهارة تحتاج إلى تعلم وممارسة.</div>
+        </div>
+</div>
+                 <div class="tweet" data-tweet-id="8397c0ff">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/03 08:45:20</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Lo que parece ser consideración por los demás es, en realidad, una subestimación de su resiliencia; ellos no lo perciben como un favor.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ما يبدو وكأنه مراعاة للآخرين هو في الواقع استهانة بقدرتهم على التحمل؛ فهم لا ينظرون للأمر على أنه معروف.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="ac3c8e26">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/03 08:43:57</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Depender de la IA es un error, pero mejorar la eficiencia es un acierto.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الاعتماد على الذكاء الاصطناعي أمر سيء، لكن تعزيز الكفاءة أمر جيد.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="2d797955">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/01/01 23:33:23</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No me interesan los asuntos ajenos; en cuanto escucho algo, lo olvido por completo al instante.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">لا تهمني شؤون الآخرين، وبمجرد أن أسمع شيئاً، أنساه تماماً في لحظتها.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="96b9c0ff">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/12/31 18:52:54</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Soy una persona que evita las complicaciones de ser demasiado estricta, por lo que nunca he defendido mis propios derechos.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أنا شخص يتجنب متاعب الجدية الزائدة، لذا لم يسبق لي أبداً الدفاع عن حقوقي الخاصة.</div>
+        </div>
+</div>
+                <div class="tweet" data-tweet-id="54c60cb6">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/30 08:59:38</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Negar a un experto por un simple impulso emocional significa invalidar toda su trayectoria, formación académica y logros para confiar en alguien sin preparación.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">إن إنكار خبير لمجرد نزوة عاطفية يعني إبطال مسيرته المهنية وأكاديمية وإنجازاته بالكامل من أجل الثقة في شخص غير متخصص.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="e71d1714">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/29 17:59:32</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Me siento aliviado al darme cuenta de que, si en el futuro seré un anciano fácil de engañar, lo mejor es dejar de confiar en todos desde ahora.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أشعر بالراحة لمجرد إدراكي أنني سأكون عجوزاً سهل الخداع في المستقبل، لذا فإن الحل هو التوقف عن الثقة بأي شخص منذ الآن.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="34d1433a">                    
+                <div class="tweet-content">
+                    <div class="tweet-header">                            
+                        <span class="time">2025/12/28 21:26:57</span>
+                        <span class="more-options">...</span>
+                    </div>
+                    <div class="tweet-text">
+                        Obtener finalmente algo que deseaba profundamente tras mucho tiempo no me genera emoción, sino el vacío de sentir que mi deseo original fue un error.
+                    </div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">إن الحصول أخيراً على شيء تمنيته بشدة بعد وقت طويل لا يولد لدي أي حماس، بل مجرد شعور بالفراغ بأن رغبتي الأصلية كانت خطأ.</div>       
+                </div>
+            </div>
+            
+            <div class="tweet" data-tweet-id="2a862646">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/28 21:22:04</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Lo que más me asusta es la facilidad con la que acepto tu punto de vista, incluso cuando es totalmente opuesto al mío; es una fragilidad aterradora.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أكثر ما يخيفني هو السهولة التي أقبل بها وجهة نظرك، حتى عندما تكون نقيضاً تاماً لوجهة نظري؛ إنه ضعف مرعب.</div>
+                    </div>
+            </div>
+            
+                <div class="tweet" data-tweet-id="b2a34ccf">
+                    <div class="tweet-content">
+                    <div class="tweet-header">
+                    <span class="time">2025/12/25 19:47:47</span>
+                    <span class="more-options">...</span>
+                    </div>
+                    <div class="tweet-text">Si lo primero es negarte a ti mismo, ¿qué herramientas te quedan para enfrentar al mundo?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">إذا كانت الخطوة الأولى هي إنكار الذات، فماذا سيبقى لديك لمواجهة هذا العالم؟</div>
+                    </div>
+                    </div>
+                    
+                    <div class="tweet" data-tweet-id="b9027b1a">
+                    <div class="tweet-content">
+                    <div class="tweet-header">
+                    <span class="time">2025/12/24 14:09:55</span>
+                    <span class="more-options">...</span>
+                    </div>
+                    <div class="tweet-text">Este mundo no es un lugar donde los deseos se cumplen por arte de magia ni donde todo sale a pedir de boca.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">هذا العالم ليس مكاناً تتحقق فيه الأماني تلقائياً أو تجري فيه الأمور كما تشتهي السفن.</div>
+                    </div>
+                    </div>
+                    
+                    <div class="tweet" data-tweet-id="cc0ae949">
+                    <div class="tweet-content">
+                    <div class="tweet-header">
+                    <span class="time">2025/12/23 17:30:41</span>
+                    <span class="more-options">...</span>
+                    </div>
+                    <div class="tweet-text">Cuando por fin aparece esa segunda mitad de la vida hecha a tu medida, te faltan las fuerzas incluso para abrir los ojos.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">حينما يأتي النصف الثاني من حياتك، مفصلاً على مقاسك تماماً، تجد نفسك منهكاً لدرجة أنك لا تملك القوة حتى لفتح عينيك.</div>
+                    </div>
+                    </div>
+                    
+                    <div class="tweet" data-tweet-id="37b711f6">
+                    <div class="tweet-content">
+                    <div class="tweet-header">
+                    <span class="time">2025/12/22 14:28:37</span>
+                    <span class="more-options">...</span>
+                    </div>
+                    <div class="tweet-text">Aunque no sé si es del todo correcto, me resulta más cómodo así.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">رغم أنني لا أعرف ما إذا كان هذا صحيحاً تماماً، إلا أنه يبدو مريحاً أكثر بالنسبة لي.</div>
+                    </div>
+                    </div>
+    <div class="tweet" data-tweet-id="aa4f0084">         
+    <div class="tweet-content">
+      <div class="tweet-header">               
+        <span class="time">2025/12/21 08:05:59</span>
+        <span class="more-options">...</span>
+      </div>
+      <div class="tweet-text">Has nacido humano y vives entre humanos. Por eso estás atrapado; ese es tu calvario.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ولدت بشراً، وتحيط بك البشر. هذا هو سجنك، وهذا هو شقاؤك.</div>
+    </div>
+</div>
+
+<div class="tweet" data-tweet-id="78f860a7">         
+    <div class="tweet-content">
+      <div class="tweet-header">               
+        <span class="time">2025/12/18 14:47:24</span>
+        <span class="more-options">...</span>
+      </div>
+      <div class="tweet-text">Cuanto más importa algo, menos importancia se le da. Y al rendir cuentas, si no sabes hablar con claridad o tu lógica es confusa, la culpa será tuya aunque no tengas nada que ver.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">كلما زادت أهمية الشيء، زاد إهماله. وعند المحاسبة، إن كنت لا تحسن التعبير أو كان منطقك مشتتاً، فستصبح المشكلة مشكلتك، حتى وإن لم تكن لك يد فيها.</div>
+    </div>
+</div>
+
+<div class="tweet" data-tweet-id="1e8c08ab">         
+  <div class="tweet-content">
+    <div class="tweet-header">             
+      <span class="time">2025/12/17 21:05:54</span>
+      <span class="more-options">...</span>
+    </div>
+    <div class="tweet-text">¿Solucionarlo? ¡Y un cuerno!</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">حل؟ أي حل هذا! هراء!</div>
+    </div>
+   </div>
+                <div class="tweet" data-tweet-id="eab07c8a">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/17 13:05:14</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Los padres tratan a sus hijos como si fueran adultos, incluso cuando apenas tienen dos o tres años. Al reprenderlos, en realidad también se están recriminando a sí mismos. Nunca creen que sea un problema suyo, pero sí están plenamente convencidos de que los buenos resultados de sus hijos se deben a su forma de educarlos.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">يعامل الآباء أبناءهم كما لو كانوا بالغين، حتى الأطفال في سن الثانية أو الثالثة. وعندما يوبخون أبناءهم، فهم في الحقيقة يوبخون أنفسهم أيضًا. لا يرون أبدًا أن الخطأ قد يكون منهم، لكنهم يؤمنون تمامًا بأن نجاح أبنائهم الدراسي هو نتيجة أسلوبهم في التربية.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="b71cd8fa">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/16 18:04:06</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Sin voz ni poder de decisión, no queda más que ir remendando con otros medios.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">من دون أي كلمة مسموعة أو سلطة اتخاذ قرار، لا يبقى سوى الترقيع بوسائل أخرى.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="ef183a46">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/15 18:50:59</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">La sinceridad queda enterrada en lo más hondo de la falsedad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الصدق مدفون في أعماق الزيف.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="1347be5b">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/14 17:53:01</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">No son las cosas las que te consumen, sino las personas.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ليست الأمور هي ما يستنزفك، بل الناس.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="88ab1ab8">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/11 20:05:26</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">¿Romper las normas morales y éticas que los adultos fijaron para los niños se ha convertido, sin más, en la prueba de madurez de un adulto?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">هل أصبح كسر القواعد الأخلاقية والقيمية التي وضعها الكبار للأطفال يُعد ببساطة علامة على نضج البالغ؟</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="218e2da0">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/11 11:10:13</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Cuando estás de bajón, abres Pinduoduo y se toman la molestia de hacer cientos de animaciones solo para halagarte.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">عندما تكون في حالة مزاجية سيئة، تفتح بيندودوو، فيبالغون في صنع مئات المشاهد المتحركة فقط لمدحك.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="40afe0ae">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/11 01:55:08</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Que tengas mucha o poca inteligencia emocional da igual; lo importante es un modo de pensar maduro.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ارتفاع الذكاء العاطفي أو انخفاضه ليس الأهم، الأهم هو امتلاك طريقة تفكير ناضجة.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="03ebc4e5">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/10 16:40:03</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Esa sensación de estar frente al peligro y no encontrar refugio por ningún lado.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ذلك الشعور حين يداهمك الخطر ولا تجد ملجأً في أي مكان.</div>
+                    </div>
+            </div>
+            <div class="tweet" data-tweet-id="8ce4687b">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                                
+                            <span class="time">2025/12/09 18:57:03</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Si solo miras a quienes están presentes, acabarás arrastrado al remolino.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">إذا ركزت فقط على من هم في المكان، فسينتهي بك الأمر منجذبًا إلى الدوامة.</div>
+                    </div>
+            </div>
+            
+                <div class="tweet" data-tweet-id="b9e253cf">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                            
+                            <span class="time">2025/12/07 13:45:42</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Mi estado es estable.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">حالتي النفسية مستقرة.</div>
+                    </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="747dce1e">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/05 16:36:33</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text">«No eres tan mala persona»… pero ¿quién me lo dice a mí?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">«لست سيئًا إلى هذا الحد»… لكن من سيقول لي ذلك؟</div>
+                        </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="9ab21e66">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/05 15:00:06</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text">¿Por qué das por sentada mi bondad, y en cambio tratarme bien a mí te resulta casi imposible?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">لماذا تعتبر طيبتي أمرًا مفروغًا منه، بينما معاملتي بلطف تبدو لك شبه مستحيلة؟</div>
+                    </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="acfb7001">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/05 09:52:10</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text">Si ni siquiera están en el mismo nivel, ¿de verdad merece la pena preocuparse por si ella fue educada contigo?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">إذا لم تكونا أصلًا على المستوى نفسه، فهل يستحق الأمر أن تقلق بشأن ما إذا كانت لطيفة معك؟</div>
+                        </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="cb958efc">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/05 04:16:46</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text">La mayoría de las cosas parecen importantes al principio, pero se quedan atascadas en algún punto y ya no me dejan dormir.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">معظم الأمور تبدو مهمة في البداية، ثم تعلق في مكان ما ولا تتركني أعود إلى النوم.</div>
+                        </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="386cfd19">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/04 14:26:20</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text"><blockquote>
+                <p>“哦，是的，就在最近，而且，部分原因是你的报告。否则，这些年我不可能完成职能任务，谨守工作，发挥作用。我明白，你不会想让一个对你在听到报告后可能产生的感觉而感到紧张的人，来宣读你的X光报告。”</p>
+                <p>——欧文・D.亚隆《一日浮生》，周明 译</p>
+                <p>“哦，是的，就在最近，部分原因就是因为您的这份报告。不然，这些年来我也无法正常工作，跟不上进度，帮不上忙。我理解，您肯定不希望一位医生在阅读您的X光片时，还紧张地担心您听到报告后的感受。”</p>
+                <p>——欧文・D.亚隆《一日浮生》，Gemini 译</p>
+                </blockquote>
+                <p>No puedo aceptar que un buen libro sea arruinado por una mala traducción al chino.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans"><blockquote style="text-align: left;">
+                <p dir="ltr" style="text-align: left;">"Oh, yes, very recently, and partly because of your report. Otherwise, I wouldn't have been able to function, to keep up, to be of use all these years. I understand that you wouldn't want someone reading your x-rays who's nervous about how you'll feel when you hear the report."</p>
+                <p dir="ltr" style="text-align: left;">—Irvin D. Yalom, Creatures of a Day: And Other Tales of Psychotherapy</p>
+                </blockquote>
+                لا أستطيع تقبّل أن يُفسد كتاب رائع بترجمة صينية رديئة.</div>
+                        </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="812edfac">                    
+                    <div class="tweet-content">
+                        <div class="tweet-header">                            
+                            <span class="time">2025/12/02 20:09:56</span>
+                            <span class="more-options">...</span>
+                        </div>
+                        <div class="tweet-text">Maldita sea esta sense de responsabilidad, ¿de verdad tengo que dejarme la vida por esto?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">اللعنة على هذا الشعور بالمسؤولية، هل عليّ حقًا أن أضحي بكل شيء من أجله؟</div>
+                    </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="e875306f">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/02 05:22:56</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text">Sal de mi cabeza.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">اخرج من رأسي.</div>
+                        </div>
+                </div>
+                
+                <div class="tweet" data-tweet-id="2e2a4304">                    
+                        <div class="tweet-content">
+                            <div class="tweet-header">                                
+                                <span class="time">2025/12/01 17:50:39</span>
+                                <span class="more-options">...</span>
+                            </div>
+                            <div class="tweet-text">Ser pasivo no deja de ser una forma de alejarse del peligro, pero también hace que se pierdan muchas posibilidades. Aun así, no tengo la bondad ni el valor para volver a salir herido.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الانسحاب قد يكون طريقة للابتعاد عن الخطر، لكنه يعني أيضًا خسارة الكثير من الاحتمالات. ومع ذلك، لا أملك اللطف ولا الشجاعة لأتعرض للأذى مرة أخرى.</div>
+                        </div> 
+                </div>
+                
+<div class="tweet" data-tweet-id="7c6a1fe6">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                                
+            <span class="time">2025/11/29 20:56:42</span>
+            <span class="more-options">...</span>
+        </div>
+        <div class="tweet-text">Puedes seguir siendo amable y, al mismo tiempo, defenderte legalmente cuando te hagan daño; no hay contradicción entre ambas cosas.</div>
+        <a class="trans-button" href="javascript:void(0)">ترجمة</a>
+        <div class="tweet-text trans">يمكنك أن تظل لطيفًا وفي الوقت نفسه تدافع عن نفسك قانونيًا عندما تتعرض للضرر؛ لا يوجد تعارض بين الأمرين.</div>
+    </div>
+</div>
+<div class="tweet" data-tweet-id="d18fa9eb">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/27 21:12:23</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Solo temo al dolor, no a la muerte; solo temo a la gente, no a los fantasmas.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أخاف الألم لا الموت؛ أخاف الناس لا الأشباح.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="e821fbb0">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/27 20:58:15</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Recordatorio formal a todos los estudiantes y el personal: los instructores de psicología no son psiquiatras.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">تذكير رسمي لجميع الطلاب والموظفين: مدرسو علم النفس ليسوا أطباء نفسيين.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="8139ac92">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/27 20:01:31</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Una mezcla de la vibra de oficina y una mentalidad servil, con la confianza y la energía completamente vacías.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">مزيج من جو العمل الذهني والعقلية الخاضعة، مع تفريغ كل من الثقة والطاقة.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="88ab18a6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/26 14:47:22</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Cuanto más vives con seriedad, más pesado se vuelve todo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">كلما عشت بجدية، زاد الحمل على كاهلك.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="a08959f4">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/25 07:42:53</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Vive en el presente, tu energía solo puede cambiar el ahora.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">عش اللحظة الحالية، طاقتك يمكنها تغيير الحاضر فقط.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="6d92a7f6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/24 22:04:07</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Al recordar escenas repugnantes una tras otra, desearía que los humanos no fueran animales sociales, o tal vez sería bueno poder olvidar selectivamente. Los animales superiores tienen formas más sofisticadas de torturarse a sí mismos. Si yo fuera el Señor del Inframundo, mi Libro de las Almas estaría probablemente lleno.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أتذكر مشاهد مقززة واحدة تلو الأخرى، ليت البشر لم يكونوا حيوانات اجتماعية، أو ربما سيكون من الجميل أن نتمكن من النسيان الانتقائي. الحيوانات العليا لديها طرق أكثر تطوراً لتعذيب نفسها. لو كنت ملك العالم الآخر، ربما سيكون كتاب الأرواح الخاص بي ممتلئاً بالكامل.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="650b1a82">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/24 11:21:46</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Es mejor desconfiar de todo el mundo que esperar a descubrir al único embaucador.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">من الأفضل عدم الثقة في الجميع بدلاً من انتظار اكتشاف المحتال المختبئ.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="4a5aa008">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/23 08:40:13</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">¿Trabajas para ganar dinero o para que tu jefe lo gane? La vida dura aproximadamente cien años, y el 40% se pasa trabajando para otros. Con tanta gente y tanta competencia, ¿realmente crees que los beneficios sociales te esperarán?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">هل نعمل لكسب المال أم لجعل مديرنا يربح؟ الحياة حوالي مئة عام وأربعون بالمئة منها نقضيها في خدمة الآخرين. مع هذا العدد الكبير من الناس والمنافسة الشديدة، هل تعتقد أن المزايا الاجتماعية ستنتظرك؟</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="4ab5cac6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/21 14:37:22</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si todas las personas fueran al mismo lugar después de morir, entonces quienes fueron ejecutados seguirían estando ahí mismo. Para explicar esto, la gente creó dos lugares: el cielo y el infierno.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">إذا كان الجميع سينتهي بهم الأمر في المكان نفسه بعد الموت، فسيكون الأشخاص الذين تم إعدامهم هناك أيضا بين الجميع. لذلك ابتكر الناس فكرتي الجنة والنار ليمنحوا كل فرد مكانا يذهب إليه.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="e4014834">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/21 07:34:03</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Internet es enorme y está extremadamente concentrado. Todo lo que nunca verías en la vida real aparece sin parar en la red. Por eso no debes llevar lo que ves en internet a tu vida real, solo te causará ansiedad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الإنترنت ضخم ومزدحم للغاية. الأشخاص والأشياء التي لن تراها في حياتك الواقعية ستظل تظهر بلا نهاية. لذلك لا تأخذ ما تراه على الإنترنت إلى حياتك الواقعية لأنه سيجعلك قلقا.</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="4a8663a8">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/19 19:26:02</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><blockquote>
+Compra ropa térmica y regálasela a tus amigos.
+</blockquote>
+<p>Es un eslogan con doble sentido. Primero, comprar ropa térmica para regalársela a los amigos. Segundo, comprar ropa térmica y que el vendedor te entregue amigos como regalo.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans"><blockquote>
+اشتر ملابس حرارية وابعث الأصدقاء.
+</blockquote>
+
+<p>
+يحمل هذا الشعار غموضا مقصودا. قد يعني أن المشتري يهدي الملابس الحرارية للأصدقاء، أو قد يوحي مازحا بأن البائع يرسل الأصدقاء كهدية مجانية مع الشراء.
+</p>
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="7152c1df">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/18 18:57:10</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Sin un plan, tu trabajo solo estará lleno de errores y descuidos.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">من دون خطة سيصبح عملك مليئا بالأخطاء والسهو.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="35746eb6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/17 21:45:30</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Ideas abstractas y conclusiones vacías. Ya no es un tema de estar bien o mal, sino un tipo de "sopa de pollo" motivacional y lavado de cerebro al estilo del éxito barato.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">هذه الأفكار المجردة والاستنتاجات الفارغة لم تعد قضية صواب أو خطأ، بل أصبحت مجرد محتوى تحفيزي زائف وغسيل دماغ ناعم كما في محتوى التنمية البشرية الرخيص.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="1cd606b1">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/17 18:01:12</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No intentes cambiar, controlar ni pedir. Solo continúa creando sin parar.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">لا تحاول التغيير أو السيطرة أو المطالبة. فقط استمر في الإبداع.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="be11ffc2">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/17 10:30:56</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Temer molestar a otros, preocuparse por lo que piensan. Falta de confianza, sentir que no puedes hacerlo solo. Si no puedes hacer lo que deseas por tu cuenta, tarde o temprano pagarás el precio.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الخوف من إزعاج الآخرين والقلق بشأن آرائهم. نقص الثقة والشعور بأنك لا تستطيع إنجاز الأمور وحدك. وإن لم تستطع متابعة ما تريده بنفسك فستدفع الثمن عاجلا أم آجلا.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="4997c612">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/17 04:58:31</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Quienes no quieren casarse ni tener hijos se enfrentarán en el futuro a un modelo de cuidado de ancianos basado en residencias y robots cuidadores.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الأشخاص الذين يختارون عدم الزواج أو الإنجاب يتجهون نحو مستقبل يعتمد فيه رعاية المسنين على دور الرعاية والروبوتات المساعدة.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="923eacc9">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/16 15:52:34</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Usar recursos por adelantado para satisfacer la mente termina dejando el espíritu insatisfecho y también agota las reservas que mantienen la seguridad emocional.
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">استخدام الموارد مسبقاً لإرضاء العقل يؤدي في النهاية إلى شعور الروح بعدم الرضا ويستنزف أيضاً الاحتياطيات التي تحافظ على الأمان النفسي.
+
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="9d74ede6">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/13 12:44:45</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Puedo escuchar de mis compañeros errores al hablar y resentimiento, y de ahí se desprende la trágica realidad: "La internet infantil contemporánea ha creado toda una generación de adultos inmaduros".
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أستطيع سماع الزلات والامتعاض من زملائي، ومن هنا أستنتج المأساة الحالية: "الإنترنت الطفولي المعاصر أنشأ جيلاً من البالغين الطفوليين".
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="60d63ec4">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/11 20:37:03</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Si una tarea está llena de pequeños fragmentos y lleva muchísimo tiempo, es inevitable sentirse nervioso e irritable.
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">لو كان العمل مليئاً بالقطع الصغيرة ويستغرق وقتاً طويلاً جداً، فسيشعر الشخص بالضجر وسرعة الانفعال.
+</div>
+        </div>
+</div>
+                 <div class="tweet" data-tweet-id="3e7237fc">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/10 18:49:59</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Todos somos actores, pero no solo tu actuación es la peor, sino que incluso tomas las falsas actuaciones como reales. Crees en cada pequeño gesto de los demás y tu mundo se pone patas arriba.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">كلنا ممثلون، لكنك ليس فقط أسوأ من حيث الأداء، بل تأخذ التمثيل الزائف على أنه حقيقي. تصدّق كل حركة من الآخرين وينقلب عالمك رأساً على عقب.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="72bd2cdd">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/07 08:58:42</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><ul> <li><strong>Día 3</strong>: El puente estaba muy limpio, parece que la limpieza llegó a tiempo. Todo estaba normal.</li> <li><strong>Día 2</strong>: En algún lugar del puente, junto a la barandilla de la acera, había velas en el suelo y una botella de licor destapada al lado.</li> <li><strong>Día 1</strong>: Comenzó el tráfico lejos del puente, a lo lejos se podían ver las luces intermitentes de los coches de policía, junto a ambulancias y camiones de bomberos. Un cartel que decía "Accidente más adelante, los vehículos deben desviarse" estaba tirado en el suelo. Dos vehículos torcidos ocupaban el carril de bicicletas, también había bicicletas eléctricas. En el suelo se levantó un toldo parcial con un letrero que decía "Por favor, no fotografiar".</li> </ul></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans"><ul> <li><strong>اليوم الثالث</strong>: كان الجسر نظيفاً جداً، يبدو أن عمال التنظيف وصلوا في الوقت المحدد. كل شيء كان طبيعياً.</li> <li><strong>اليوم الثاني</strong>: في مكان ما على الجسر، بجانب سور الرصيف، كانت هناك شموع على الأرض وزجاجة خمر مفتوحة بجانبها.</li> <li><strong>اليوم الأول</strong>: بدأ الاختناق المروري بعيداً عن الجسر، ومن بعيد كانت تلمع أضواء سيارات الشرطة، بجانبها سيارات الإسعاف والإطفاء. لوحة مكتوب عليها "حادث أمامك، على المركبات التحويل" كانت مرمية على الأرض. سيارتان مائلتان في مسار الدراجات، وكانت هناك أيضاً دراجات كهربائية. على الأرض تم نصب جزء من مظلة مكتوب عليها "يرجى عدم التصوير".</li> </ul>
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="e186b16c">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/06 16:06:49</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No entiendo por qué a ustedes les gusta tanto usar Baidu Netdisk y 360 Total Security…</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">لا أفهم لماذا تحبّون استخدام <span dir="ltr">Baidu Netdisk</span> و <span dir="ltr">360 Total Security</span> هكذا كثيراً…</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="6b3947cf">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/05 21:17:34</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Un gasto enorme tomado con determinación se siente como la sensación de que te estrangulan vivo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">
+الإنفاق الضخم بعد اتخاذ قرار حاسم يشبه الشعور وكأن أحداً يخنقك حتى الموت.</div>
+        </div>
+</div>
+                 <div class="tweet" data-tweet-id="5c8fc36b">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/04 11:26:46</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><p>Aquí tienes una versión en español natural, que cualquier hablante local puede entender:</p>
+
+<p>Quiero exponer de manera objetiva el significado de la muerte. Primero, la definición biológica: el cerebro pierde de forma irreversible la conciencia y la memoria. Segundo, se terminan todas las interacciones sociales, los vínculos entre personas. Se pierde lo que los demás esperan de uno y se queda libre de toda responsabilidad. Lo que queda son los arrepentimientos internos y el miedo a lo desconocido. Al final, ya no se puede seguir cambiando este mundo. ¿A qué le tememos? Al hecho de perder cosas, al sufrimiento que nos lleva hacia la muerte.</p>
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">
+أريد أن أشرح معنى الموت بشكل موضوعي. أولاً، التعريف البيولوجي: يفقد الدماغ الوعي والذاكرة بشكل لا رجعة فيه. ثانياً، تنتهي كل التفاعلات الاجتماعية، وكل الروابط بين الناس. يفقد المرء توقعات الآخرين ويصبح خالياً من أي مسؤولية. ما يبقى هو الندم الداخلي والخوف من المجهول. في النهاية، لا يمكن الاستمرار في تغيير هذا العالم. ممّا نخاف؟ نخاف فقدان الأشياء، والخضوع للمعاناة التي تقودنا نحو الموت.
+
+</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="e5e10d1c">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                            
+            <span class="time">2025/11/03 17:27:48</span>
+            <span class="more-options"><img src="images/lock.svg"></span>
+        </div>
+        <div class="tweet-text">La sombra del árbol de osmanthus es amarilla.
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ظل شجرة الأوسمانثوس أصفر.
+</div>
+                            </div>
+                        </div>
+
+<div class="tweet" data-tweet-id="e76a4c61">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/03 10:53:00</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No se puede decir exactamente qué hay en el corazón; ha sido comprometido y luego derrotado.
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">لا يمكن تحديد ما هو الشيء الداخلي؛ لقد تم التنازل عنه ثم هزيمته.
+</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="4447adbd">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/02 21:15:35</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El placer que trae el consumo es el más breve.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">اللذة التي يجلبها الاستهلاك هي الأقصر مدة.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="37e4f193">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/11/02 01:31:20</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">El <em>mayor agujero en la trama</em> de <em>Detective Conan</em> es que permite <em>hacer deducciones mientras uno está inconsciente</em>.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">أكبر <em>ثغرة</em> في مسلسل <em>المحقق كونان</em> هي أنه يسمح بـ <em>الاستنتاج بينما يكون الشخص فاقد الوعي</em>.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="df1e5182">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/29 14:13:03</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Las mismas palabras pueden ser un consuelo para uno mismo, pero un reproche para los demás.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">نفس الكلام ممكن يكون تعزية لنفسك، لكنه لعنة على الآخرين.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="d945f2da">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/29 14:06:58</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La gente pone su energía en su pareja… y esa pareja ni siquiera tiene que ser humana.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الناس يكرسون طاقتهم لشريكهم… وهذا الشريك مش لازم يكون إنسان.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="438bb60c">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/27 10:25:59</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Las personas siempre tienen ilusiones sobre los demás: crees que entienden lo que quieres decir, que saben lo que piensas, que actuarán o no actuarán según lo que tú imaginas. Crees que pueden comprender tu corazón incluso cuando guardas silencio.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الناس دائمًا يحملون أوهامًا تجاه بعضهم البعض: يظنون أنك تفهم ما يقصدونه، وتعرف ما يفكرون به، وستفعل أو لن تفعل كما يتخيلون. يعتقدون أنك تستطيع فهم قلوبهم حتى عندما يصمتون.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="38e9e0f1">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/26 23:18:14</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Cuanto más larga es la relación, más profundo es el daño.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">كلما طالت العلاقة، كان الأذى أعمق.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="4195538d">                    
+    <div class="tweet-content">
+        <div class="tweet-header">                                
+            <span class="time">2025/10/25 18:40:56</span>
+            <span class="more-options">...</span>
+        </div>
+    <div class="tweet-text">Ver videos cortos es como buscar carne en la basura: hay tan poca que ya te mueres de hambre antes de encontrarla, y al final no obtienes nada.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">تصفح مقاطع الفيديو القصيرة يشبه البحث عن قطعة لحم في القمامة — اللحم نادر لدرجة أنك تموت جوعًا قبل أن تجده، وبعد كل هذا لا تحصل سوى على القمامة.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="8b305354">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/23 19:46:26</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><p>Debido al aislamiento informativo, desde pequeño mi definición de la sociedad se construyó sobre una utopía de <strong>perfeccionismo</strong> e <strong>idealismo</strong>. Crecí bajo disciplina, restricción y obediencia. Cuando entré en la sociedad, esas ataduras desaparecieron, y las personas sin autocontrol comenzaron a perseguir sus deseos a cualquier precio.</p>
+
+<p>La sociedad no es simplemente una ampliación de la escuela. A medida que uno descubre la <strong>oscuridad de sus cimientos</strong>, la malicia en los corazones humanos, la fealdad y la suciedad, cada revelación deja una herida. Poco a poco, el individuo se vuelve insensible, pesimista y cansado del mundo. La distancia entre la realidad y las expectativas se vuelve inmensa, y las contradicciones entre el entorno y el propio interior aparecen por todas partes.</p>
+
+<p>La <strong>falta de deseo de socializar</strong> no es más que una forma de <em>pureza espiritual</em> nacida de la <strong>negativa a enfrentar la naturaleza humana</strong>. Solo cuando te conviertes en la versión de ti mismo que tanto detestabas podrás disfrutar de la vida que siempre esperaste.</p>
+</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans"><p>بسبب العزلة وقلة المعلومات، كانت رؤيتي للمجتمع منذ الصغر مبنية على <strong>اليوتوبيا</strong> القائمة على <strong>الكمال</strong> و<strong>المثالية</strong>. نشأتُ منضبطًا، مقيّدًا، ومطيعًا. وعندما دخلتُ المجتمع، اختفت القيود، فبدأ الذين يفتقرون إلى ضبط النفس بالسعي وراء رغباتهم بأي وسيلة ممكنة.</p>
+
+<p>المجتمع ليس مجرد نسخة مكبّرة من المدرسة. ومع اكتشاف <strong>ظلام أساسه</strong>، وخبث القلوب، وقبح البشر ودناءتهم، تأتي الجروح تِباعًا. ومع الوقت يصبح الإنسان متبلّد الإحساس، متشائمًا، ساخطًا على العالم. ويزداد الفارق بين الواقع والتطلعات، لتظهر التناقضات بين العالم الخارجي والذات في كل مكان.</p>
+
+<p>إنّ <strong>العزوف عن التواصل الاجتماعي</strong> ليس إلا نوعًا من <em>النقاء الروحي</em> الناتج عن <strong>رفض مواجهة الطبيعة البشرية</strong>. لن تنعم بالحياة التي تتمناها إلا عندما تصبح النسخة من نفسك التي كنت تكرهها.</p>
+
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="b88ac4e4">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/22 22:19:32</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text"><blockquote>
+<p>Soy un participante muy pasivo en las conversaciones; solo sé qué decir cuando alguien me hace una pregunta. Si nadie me pregunta, podría permanecer en silencio o sentirme perdido. No sé cómo integrarme activamente en una discusión, cómo interactuar con desconocidos, ni cómo relajarme en tales situaciones.<br>—— Hu An Yan</p>
+</blockquote>
+<p>La gente suele ser tolerante con las excentricidades de los famosos. Solo las celebridades pueden decir abiertamente cosas que, si vinieran de personas comunes, serían malinterpretadas o discriminadas.</p></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans"><blockquote>
+<p>أنا مشارك سلبي جدًا في المحادثات؛ لا أعرف ماذا أقول إلا عندما يسألني شخص ما سؤالًا. إذا لم يسألني أحد، قد أبقى صامتًا أو أشعر بالحيرة. لا أعرف كيف أشارك بنشاط في النقاش، أو كيف أتفاعل مع الغرباء، أو كيف أسترخي في مثل هذه المواقف.<br>— Hu An Yan</p>
+</blockquote>
+<p>
+الناس عمومًا متسامحون مع غرائب المشاهير. فقط يمكن للمشاهير أن يقولوا بصراحة أشياء، إذا قالها الأشخاص العاديون، ستُفهم خطأ أو تُقابل بالتمييز.
+
+</p></div>
+        </div>
+</div>
+                 <div class="tweet" data-tweet-id="6fd87e48">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/21 10:53:29</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">¡Todos son tan buenos fingiendo! Estoy seguro de que cada una de las <em>N</em> personas ha creado <em>N-1</em> grupos.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">الجميع يجيدون التظاهر! أنا متأكد أن كل واحد من <em>N</em> أشخاص أنشأ <em>N-1</em> مجموعات.</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="1f860d14">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/20 22:23:29</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Quizás en el mundo no existan el bien ni el mal, sino solo una cuestión de tiempo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ربما لا يوجد في هذا العالم صواب أو خطأ، بل هو فقط مسألة وقت.</div>
+        </div>
+</div>
+
+                 <div class="tweet" data-tweet-id="68b8bd59">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/20 12:53:08</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La ansiedad por el desempleo proviene más de las murmuraciones de quienes no están desempleados.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">قلق البطالة يأتي أكثر من ثرثرة الآخرين الذين ليسوا عاطلين عن العمل.
+
+</div>
+        </div>
+</div>
+
+<div class="tweet" data-tweet-id="07ecc850">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/19 09:31:01</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Incluso si la opinión de una minoría es correcta, no afectará los fenómenos predominantes en la sociedad.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">حتى إذا كانت وجهة نظر الأقلية صحيحة، فلن تؤثر على الظواهر السائدة في المجتمع.
+
+
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="fa49dfc5">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/16 10:01:20</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Normalmente nunca enseñan, esperan que fracases y se rían. Luego, cuando dices que no sabes, el jefe dice: “¿No sabes preguntar?” Esto es un error lógico: al enfrentarte a un nuevo campo, sin haber encontrado problemas antes ni tener experiencia, ¿cómo podrías formular preguntas correctas?</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">عادة لا يُعلّمونك شيئًا، وعندما تحدث المشاكل ينتظرون فقط للضحك عليك. ثم، عندما تقول أنك لا تعرف، يقول المدير: "ألا تعرف كيف تسأل؟" هذا خطأ منطقي: عند دخولك مجالًا جديدًا، دون أن تواجه أي مشكلة مسبقًا أو تملك أي خبرة، كيف يمكنك طرح الأسئلة الصحيحة؟</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="a19e862b">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/16 07:27:47</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">La cultura del té con leche en la oficina requiere que colegas con distintos salarios gasten dinero para mantener relaciones estables, lo que convierte la voluntad personal en una tarea laboral. Algunos no quieren gastar, otros no pueden soportarlo físicamente, y si alguien rompe la norma, todo se desordena.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">ثقافة شاي الحليب في المكتب تتطلب من الزملاء ذوي الرواتب المختلفة إنفاق المال للحفاظ على علاقات مستقرة، مما يحوّل الرغبات الشخصية إلى مهام عمل. بعض الأشخاص لا يرغبون في الإنفاق، والبعض الآخر لا يستطيع التحمل جسديًا، وإذا بدأ أحدهم، يختل النظام.
+</div>
+        </div>
+</div>
+<div class="tweet" data-tweet-id="f40b697f">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2025/10/13 12:47:38</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">Todas las flores, aplausos, vítores, ovaciones, fuegos artificiales y todo lo bello se arrojaron al abismo.</div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans">تم إلقاء كل الزهور والتصفيق والهتافات والاحتفالات والألعاب النارية وكل الأشياء الجميلة في الهاوية.
+</div>
+        </div>
+</div>
+<!-- EOF -->
+</div>
+
+            <div class="notice">
+    <div><img style="width:84px;opacity: 0.5;" src="images/isolation.svg"></div>
+    <div style="cursor:default;margin-top:1rem">Algunos <strong>tweets</strong> de <em>principios de este mes</em> han sido archivados.</div>
+</div>
+                    </div>                   
+                    <div class="bottom-banner"></div>
+                    <div class="footer">
+                        &copy; Alta gama de fachada ,
+                        <script src="assets/x.min.js?v=1.4"></script><a href="info.html">Información de derechos de autor</a>
+                    </div>  
+                    <script src="assets/html2canvas.min.js"></script>
+<!-- 模态框：图片预览 + 下载按钮 -->
+<div id="preview-modal" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1999;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+">
+  <div id="shareimage" class="qq-window">
+      <!-- 标题栏 -->
+        <div class="qq-titlebar">        
+            <div class="qq-icon"><img src="images/google-icon.svg"></div><div class="qq-titlebar-text">Compartir un tweet</div>
+            <div class="qq-titlebar-buttons">
+                <a onclick="document.getElementById('preview-modal').style.display='none'" class="qq-titlebar-button close">×</a>
+            </div>
+            <div class="qq-decor-line"></div>
+        </div>
+        <div class="qq-content">
+    <div id="preview-image-container" style="border:1px solid #94b8ce;margin-bottom:1em;max-height: 80vh; overflow: auto;"></div>
+<div class="qq-button-container">
+                    <a id="download-btn" class="qq-button"><svg t="1753710735193" class="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5883" width="30" height="30"><path d="M505.7 661c3.2 4.1 9.4 4.1 12.6 0l112-141.7c4.1-5.2 0.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8z" p-id="5884" fill="#2d404e"></path><path d="M878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z" p-id="5885" fill="#2d404e"></path></svg><span style="
+                   transform:ترجمY(2px);display:inline-block;user-select:none;">Descargar</span></a>
+                </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="capture-area" style="position: absolute; left: -9999px; top: -9999px;"></div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="notranslate">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />  
+  <title>¡Nunca negocies con ransomware!</title>
+  <style>
+  td{border:solid #86b392 1px;width: 18px;height: 18px;line-height: 18px;font-size: 14px;text-align: center;}
+table{border-collapse:collapse;border:none;margin-bottom:1em; }
+    :root {
+        --md-background: #202124;
+        --md-surface: #2d2e30;
+        --md-surface-variant: #3c4043;
+        --md-on-background: #e8eaed;
+        --md-on-surface: #bdbfc2;
+        --md-on-surface-variant: #9aa0a6;
+        --md-outline: #5f6368;
+        --md-blue: #8ab4f8;
+        --md-green: #81c995;
+        --md-red: #f28b82;
+        --md-yellow: #fde293;
+        --md-purple: #bb86fc;
+--md-pink: #ff8a9d;
+--md-orange: #ffb74d;
+--md-cyan: #4dd0e1;
+--md-teal: #26a69a;
+--md-indigo: #7986cb;
+--md-brown: #a1887f;
+--md-gray: #bdbdbd;
+--md-lime: #dce775;
+--md-deep-orange: #ff8a65;
+--md-light-blue: #4fc3f7;
+--md-light-green: #aed581;
+        --header-bg: rgba(32, 33, 36, 0.6);
+    }
+    
+body, html {
+      background: #111;
+      color: #eee;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "Helvetica Neue", 
+             "PingFang SC", "Hiragino Sans GB", "Noto Sans", Arial, sans-serif;
+
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 1rem;
+      width: 90%;
+    }
+    h1 {
+      color: #98ff98;
+      padding-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .highlight {
+      background: #222;
+      padding: 1rem;
+       border-left: 4px solid #98ff98;
+      font-style: italic;
+      color: #ddd;
+    }
+    a.button {
+      display: inline-block;
+      background: #98ff98;
+      color: #2c3e50;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    a.button:hover {
+      background: #7be387;
+    }
+    #mode-indicator {
+      display: none;
+    }
+.disclaimer  {
+  padding: 1rem;
+  background: #1a2b1a;
+  border: 1px solid #7be387;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #7be38733;
+  color: #cceccc;
+  font-size: 0.95rem;
+  text-align: left;
+}
+#fade-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #111;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#fade-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+  animation: brighten 10s forwards;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@keyframes brighten {
+  0%   { background-color: #111; }
+  100% { background-color: #fff; }
+}
+
+.fade-text {
+  text-align: center;
+  opacity: 0;
+  animation: fadein 1s ease-in forwards, textColorChange 10s forwards;
+  animation-delay: 0.5s, 0s;
+}
+@keyframes textColorChange {
+  0% {
+    color: #eeeeee; /* 浅灰 */
+  }
+  100% {
+    color: #222222; /* 深色 */
+  }
+}
+.fade-text .es {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.fade-text .ar {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.7;
+  direction: rtl;
+}
+@keyframes fadein {
+  to { opacity: 1; }
+}
+/* 进度条容器样式 */
+.progress-bar {
+  width: 200px;
+  height: 6px;
+  background: #444;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 1.5rem auto 0;
+}
+
+/* 进度条填充部分 */
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #56ccf2; /* 柔和蓝色 */
+  animation: loadProgress 10s forwards;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1); /* 前快后慢节奏 */
+}
+
+/* 关键帧动画：从 0% 到 100% 宽度 */
+@keyframes loadProgress {
+  0% {
+    width: 0%;
+  }
+  90% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.svg-light{
+    fill: var(--md-yellow);
+}
+@keyframes pulse {
+  0%, 20% { opacity: 0.3; }    /* 开始 0.3 并停留 2s（占总时间的20%） */
+  50% { opacity: 1; }           /* 过渡到 1 */
+  50%, 70% { opacity: 1; }      /* 保持 1 停留 2s */
+  100% { opacity: 0.3; }        /* 回到 0.3 */
+}
+.svg-light-wrap{
+    opacity: 0.3;
+    animation: pulse 10s infinite;
+    cursor: pointer;
+}
+.enter-quired{
+    line-height:2;margin:2rem 0;display: flex; flex-wrap: wrap; align-items: center; gap: 15px;user-select: none;font-style:italic;
+}
+.enter-quired a{
+    display: inline-block;
+    outline: none;
+}
+.enter-quired a svg{
+    display: block;
+}
+</style>
+</head>
+<body>
+<div id="fade-overlay">
+  <div class="fade-text">
+    <div class="es">La luz del sol se está acercando.</div>
+    <div class="ar">أشعل عود ثقاب، ودع السحر يتجلّى!</div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+  </div>
+</div>
+  <div class="container">
+    <h1>¡Nunca negocies con ransomware!</h1>
+    <p class="highlight">Los datos se pueden recuperar, pero los recuerdos no. El mal no conoce fronteras.</p>
+    <p style="line-height:2;margin:2rem 0;">
+  Este sitio web defiende firmemente el Principio de Una Sola China y reconoce todos los territorios soberanos reclamados por China según la posición de la República Popular China. Protegemos resueltamente la soberanía nacional y la integridad territorial, y operamos en pleno cumplimiento de las leyes y regulaciones de la República Popular China.
+
+</p>
+<p style="line-height:2;margin:2rem 0;">
+  Este sitio web protege estrictamente la ciberseguridad y se opone a cualquier acto de intrusión, manipulación, sabotaje o eliminación de redes, servidores o archivos. Está estrictamente prohibido implantar troyanos, explotar vulnerabilidades o participar en cualquier forma de interferencia no autorizada. Todos los usuarios deberán cumplir con las leyes y regulaciones de la República Popular China al acceder o utilizar este sitio web.
+
+</p>
+    <p class="disclaimer">
+  Al acceder a este sitio web o hacer clic en el botón de abajo, usted afirma su <strong>pleno acuerdo</strong> y <strong>apoyo explícito</strong> a todas las <em>declaraciones</em> anteriores, incluyendo la <strong>integridad territorial y la soberanía de China</strong>, así como el compromiso de <strong>no comprometer la seguridad de la red o del servidor</strong>.
+
+</p>
+  <div class="enter-quired" id="mode-indicator"><svg class="svg-light-wrap" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24"><path  class="svg-light" d="M512 51.2a387.2 387.2 0 0 0-386.752 386.688 386.816 386.816 0 0 0 216.704 347.264v108.224c0 30.08 24.448 54.528 54.528 54.528h34.944a50.176 50.176 0 0 0 43.264 24.896h74.752a50.304 50.304 0 0 0 43.264-24.896h34.944c30.08 0 54.464-24.448 54.464-54.528v-108.224a386.816 386.816 0 0 0 216.704-347.264A387.2 387.2 0 0 0 512.064 51.2z m115.584 845.504h-51.328c-0.576-0.064-1.088-0.384-1.664-0.384s-1.152 0.32-1.792 0.384H396.416a3.328 3.328 0 0 1-3.328-3.328v-17.664h237.696v17.664a3.264 3.264 0 0 1-3.264 3.328z m18.624-151.36a25.6 25.6 0 0 0-15.36 23.424v55.744H537.6v-179.776l143.296-133.184a25.6 25.6 0 0 0-34.816-37.504L512.64 598.08 375.424 461.824a25.6 25.6 0 0 0-36.096 36.352L486.4 644.288v180.288H393.088v-55.744a25.472 25.472 0 0 0-15.36-23.424 335.744 335.744 0 0 1-201.344-307.456c0-185.024 150.528-335.488 335.552-335.488s335.552 150.528 335.552 335.488a335.552 335.552 0 0 1-201.344 307.456z"></path></svg><span>¡Granada aturdidora por delante!</span></div>
+    <div style="margin:2rem auto;text-align:center;">
+      <a id="agree-btn" href="x.html?access=true" class="button">Aceptar y acceder</a>
+    </div>
+  </div>
+  <script>
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const indicator = document.getElementById('mode-indicator');
+
+const button = document.querySelector('a.button');
+const overlay = document.getElementById('fade-overlay');
+if (!isDarkMode) {
+  indicator.style.display = 'flex';
+} 
+button.addEventListener('click', function (e) {
+  e.preventDefault();
+  const link = this.href;
+
+  if (isDarkMode) {
+    // 深色模式，直接跳转
+    window.location.href = link;
+  } else {
+    // 非深色模式：预加载 + 动画过渡
+    overlay.classList.add('show');
+    setTimeout(() => {
+      window.location.href = link;
+    }, 10000); // 跳转延迟（同步动画时间）
+  }
+});
+</script>
+</body>
+</html>

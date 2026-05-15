@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="robots" content="notranslate">
+        <meta name="color-scheme" content="light dark">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta gama de fachada</title>
+        <link rel="stylesheet" href="assets/x.min.css">
+        <link rel="stylesheet" href="https://vjs.zencdn.net/7.20.3/video-js.min.css">
+     </head>
+    <body>
+        <style>
+            .trans,.trans-button {
+    direction: rtl;   /* 设置文字方向为从右到左 */
+    text-align: right; /* 文字靠右显示 */
+    unicode-bidi: bidi-override; /* 保证嵌套文字正确显示 */
+}
+ .trans blockquote{
+    border-right: 4px solid var(--md-light-green);
+    border-left:none;
+ }
+        </style>
+        <script>// 获取当前 URL 参数
+const urlParams = new URLSearchParams(window.location.search);
+
+// 判断是否有 access=true
+if (urlParams.get('access') !== 'true') {
+    // 如果没有 access=true，则跳转到首页
+    window.location.href = 'index.html'; 
+}
+</script>
+        <div id="badge-tooltip" class="tooltip">
+            <p style="font-size:110%;font-weight:bolder;">Cuenta verificada</p>
+  <p></p><ul>
+<li style="display:flex; align-items:flex-start;"><img style="width:18px;margin-top:0.2em;margin-right:3px;" src="images/verified_badge.svg">Esta es la única cuenta oficial de MicroX.</li>
+<li><svg class="bsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><g><path class="bsvg-path" d="M7
+                                4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0
+                                1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3
+                                18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27
+                                0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0
+                                .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0
+                                6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0
+                                4h2v-2h-2v2zm4-4h2v-2h-2v2z"></path></g></svg>Verificada desde mayo de 2025.</li>
+<li style="display:flex; align-items:flex-start;"><svg class="bsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><g><path class="bsvg-path" d="M3.009 4.381v7.637c0 2.546.918 4.862 2.584 6.523.283.281.587.543.905.778C8.936 21.123 10.738 22 12.008 22c1.272 0 3.074-.877 5.51-2.68.325-.239.634-.505.917-.789 1.66-1.66 2.574-3.973 2.574-6.513V4.382l-.553-.276C20.284 4.019 16.196 2 12.009 2S3.733 4.02 3.562 4.105zm8.99 2.119c1.66 0 3 1.34 3 3s-1.34 3-3 3c-1.65 0-3-1.34-3-3s1.35-3 3-3zm0 7.5c2.27 0 4.24.79 5.71 2.28-.21.3-.44.58-.7.84-.21.21-.44.41-.69.59-.82.61-1.69 1.2-2.5 1.63-.84.46-1.46.66-1.82.66-.35 0-.97-.2-1.82-.66-.8-.43-1.68-1.02-2.5-1.63-.24-.18-.47-.38-.68-.59-.26-.25-.5-.54-.71-.84C7.77 14.79 9.73 14 12 14z"></path></g></svg>Administrador del sitio</li></ul>
+</div>
+        <div class="header"><svg t="1746847106578" viewBox="0 0 1024 1024"
+                version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1568"
+                width="32" height="32"><path class="icon" d="M446.31
+                    135.36c59.14-32.57 133.57-17.46 177.33 32.42 20.22 23.05
+                    36.34 49.86 53.08 75.76 54.92 85.02 109.37 170.34 163.78
+                    255.69 14.68 23.02 11.74 37.13-10.11 53.81-3.85 2.94-7.82
+                    5.8-12.04 8.17-32.65 18.35-40.83
+                    16.37-60.85-14.6-71.42-110.44-143.06-220.74-214.09-331.43-20.69-32.24-49.06-54.85-82.48-72.11-4.21-2.17-8.4-4.43-14.62-7.71zM165.01
+                    653.32c-20.77-42.48-23.41-82.99-0.47-119.52C213.2 456.32
+                    265.31 381 315.98 304.77c28.85-43.4 58.17-86.5 86.11-130.47
+                    8.39-13.21 18.19-15.94 29.93-9.09 19.47 11.36 37.87 24.56
+                    55.3 36.05-68.12 106.25-134 208.45-199.16 311.1-14.88
+                    23.45-27.1 48.58-41 72.66-2.48 4.3-6.62 8.65-11.05
+                    10.66-27.47 12.48-52.05 28.44-71.1 57.64zM702.39
+                    785.54c-47.62 32.71-93.48 64.21-141.88
+                    97.46-0.68-7.98-1.5-13.09-1.5-18.2-0.08-70.43
+                    0.39-140.87-0.36-211.3-0.19-17.39 5.33-23.46 22.96-23.11
+                    47.95 0.96 95.97-0.91 143.89 0.67 52.88 1.75 95.25-19.04
+                    131.85-54.99 3.36-3.3 6.85-6.48 10.48-9.92 14.29 27.24 6.02
+                    74.23-20.03 101.21-28.96 29.99-63.04 50.9-107.28
+                    49.31-23.04-0.83-46.14 0.14-69.21-0.16-11.27-0.15-17.1
+                    3.87-16.39 15.94 0.89 15.09-4.26 34.43 3.27 44.05 6.65 8.49
+                    27.13 6.14 44.2 9.04zM468.81
+                    880.48c-45.78-32.29-91.55-64.57-141.87-100.06h48.12v-60.93c-62.01-2.91-128.66
+                    10.55-183.11-37.54 14.52-26.2 37.09-42.29 60.66-57.17
+                    2.63-1.66 6.9-1.38 10.32-1.06 32.99 3.08 65.9 7.84 98.95
+                    9.16 32.06 1.28 64.27-0.59 96.39-1.8 11.18-0.42 17.17 2.18
+                    17.13 14.68-0.23 77.57-0.12 155.15-0.12 232.72-2.16
+                    0.66-4.31 1.33-6.47 2z" fill="#ffffff" p-id="1569"></path></svg><span
+                style="display:inline-block;transform:translate(5px,-8px);">Alta gama de fachada</span></div>
+        <div class="top-banner"></div>
+        <div style="padding:16px;background-color:var(--md-background);position:
+            relative;">
+            <div style="width: 64px;height: 64px;border-radius: 50%;background:
+                #ffffff;
+                background-size: 100%;border:var(--md-background) solid
+                3px;position: absolute;top:-35px;background-position:center;"></div>
+            <div>
+                <p>&nbsp;</p>
+                <p style="font-weight: bolder;font-size:110%;">辟人之士<img
+                        class="verified-badge original" src="images/verified_badge.svg"></p>
+                <p style="color:var(--md-on-surface);">@malct000001</p>
+                <p style="font-weight: bolder;">Yo disfruto, todos disfrutan.</p>
+                <p style="color:var(--md-on-surface);"><svg class="bsvg"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        aria-hidden="true"><g><path class="bsvg-path" d="M12
+                                7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12
+                                14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827
+                                0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5
+                                1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5
+                                8.5 0 5.967 7.621 11.116 7.945
+                                11.332l.555.37.555-.37c.324-.216 7.945-5.365
+                                7.945-11.332C20.5 5.813 16.687 2 12 2zm0
+                                17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916
+                                8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835
+                                8.028-6.5 9.27z"></path></g></svg>República Popular de China</span>
+                <span style="margin-left:20px;"><svg class="bsvg"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        aria-hidden="true"><g><path class="bsvg-path" d="M7
+                                4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0
+                                1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3
+                                18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27
+                                0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0
+                                .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0
+                                6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0
+                                4h2v-2h-2v2zm4-4h2v-2h-2v2z"></path></g></svg>Se unió en mayo de 2025</p>
+                <p><span style="font-weight: bolder;margin-right:5px;">0</span><span
+                        style="color:var(--md-on-surface);">Siguiendo</span><span
+                        style="font-weight: bolder;margin:0px 5px 0px 20px;"
+                        id="followers">...</span><span
+                        style="color:var(--md-on-surface);">Seguidores</span></p>
+            </div>
+        </div>
+<div class="nav">
+  <div class="tabs-container" style="position: relative; display: flex; margin-left: 2rem;">
+    <div class="twi-tabs">Recientemente</div>
+    <div class="twi-tabs">Todo</div>
+    <div class="tab-underline"></div> <!-- 蓝色滑动横线 -->
+  </div>
+</div>
+
+<div class="all">
+<!-- INSERT_HERE -->
+<div class="tweet" data-tweet-id="17e7400b">                    
+        <div class="tweet-content">
+            <div class="tweet-header">                                
+                <span class="time">2026/04/17 06:04:55</span>
+                <span class="more-options">...</span>
+            </div>
+            <div class="tweet-text">No es necesario que entiendas mi código complejo ni que navegues por mi sitio web privado. Solo tienes que hacer clic en este enlace para ver todos mis pensamientos. <a href="https://www.amazon.com/s?i=digital-text&amp;rh=p_27%3AJefe%2BLazaro" title="Jefe Lazaro" target="_blank">Amazon.com</a></div><a class="trans-button" href="javascript:void(0)">ترجمة</a><div class="tweet-text trans" dir="rtl">ليس عليك فهم رمزي المعقد، ولا داعي لتصفح موقعي الخاص. كل ما تحتاجه هو نقرة واحدة على هذا الرابط لتطلع على كل ما يدور في خاطري. <a href="https://www.amazon.com/s?i=digital-text&amp;rh=p_27%3AJefe%2BLazaro" title="Jefe Lazaro" target="_blank" dir="ltr">Amazon.com</a></div>
+        </div>
+</div>
+<!-- EOF -->
+</div>
+
+            <div class="notice"></div>
+                    </div>                   
+                    <div class="bottom-banner"></div>
+                    <div class="footer">
+                        &copy; Alta gama de fachada ,
+                        <script src="assets/x.min.js?v=1.4"></script><a href="info.html">Información de derechos de autor</a>
+                    </div>  
+                    <script src="assets/html2canvas.min.js"></script>
+<!-- 模态框：图片预览 + 下载按钮 -->
+<div id="preview-modal" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1999;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+">
+  <div id="shareimage" class="qq-window">
+      <!-- 标题栏 -->
+        <div class="qq-titlebar">        
+            <div class="qq-icon"><img src="images/icon.svg"></div><div class="qq-titlebar-text">Compartir un tweet</div>
+            <div class="qq-titlebar-buttons">
+                <a onclick="document.getElementById('preview-modal').style.display='none'" class="qq-titlebar-button close">×</a>
+            </div>
+            <div class="qq-decor-line"></div>
+        </div>
+        <div class="qq-content">
+    <div id="preview-image-container" style="border:1px solid #94b8ce;margin-bottom:1em;max-height: 80vh; overflow: auto;"></div>
+<div class="qq-button-container">
+                    <a id="download-btn" class="qq-button"><svg t="1753710735193" class="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5883" width="30" height="30"><path d="M505.7 661c3.2 4.1 9.4 4.1 12.6 0l112-141.7c4.1-5.2 0.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8z" p-id="5884" fill="#2d404e"></path><path d="M878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z" p-id="5885" fill="#2d404e"></path></svg><span style="
+                   transform:ترجمY(2px);display:inline-block;user-select:none;">Descargar</span></a>
+                </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="capture-area" style="position: absolute; left: -9999px; top: -9999px;"></div>
+</body>
+</html>
